@@ -1,7 +1,0 @@
-﻿services:
-  shelter:
-    image: shelter
-    build:
-      context: .
-      dockerfile: Dockerfile
-
