@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Shelter_Hervas.Web")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Shelter_Hervas.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+765eca8d520e104468d41e2711f3478cf4ecb578")]
-[assembly: System.Reflection.AssemblyProductAttribute("Shelter_Hervas.Web")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Shelter_Hervas.Web")]
+[assembly: System.Reflection.AssemblyProductAttribute("Shelter_Hervas.Domain")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Shelter_Hervas.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Vygenerované třídou WriteCodeFragment nástroje MSBuild

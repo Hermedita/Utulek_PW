@@ -6,4 +6,10 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="Shelter_Hervas.Application\Shelter_Hervas.Application.csproj" />
+      <ProjectReference Include="Shelter_Hervas.Domain\Shelter_Hervas.Domain.csproj" />
+      <ProjectReference Include="Shelter_Hervas.Infrastructure\Shelter_Hervas.Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>
