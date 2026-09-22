@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #292929;
+  font-family: Roboto, Arial, sans-serif;
+  background:
+    linear-gradient(rgba(225,225,225,.55), rgba(225,225,225,.55)),
+    repeating-linear-gradient(
+      8deg,
+      #bdbdbd 0 3px,
+      #d0d0d0 3px 8px,
+      #aaa 8px 12px
+    );
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: .08;
+  background:
+    repeating-linear-gradient(
+      100deg,
+      transparent 0 35px,
+      #fff 36px 38px,
+      transparent 39px 75px
+    );
+}
+
+.page {
+  width: min(1080px, calc(100% - 28px));
+  margin: 28px auto 35px;
+}
+
+.header {
+  background: rgba(255,255,255,.96);
+  min-height: 125px;
+  padding: 15px 18px 0;
+  border-bottom: 5px solid #555;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  font-size: 38px;
+  filter: grayscale(1);
+}
+
+.brand-name {
+  font: 700 34px Oswald, sans-serif;
+  letter-spacing: 2px;
+  color: #222;
+}
+
+.brand-sub {
+  color: #666;
+  font: 600 12px Oswald, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.top-links {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  font-size: 11px;
+}
+
+.top-links a {
+  color: #444;
+  text-decoration: none;
+  margin-left: 14px;
+}
+
+.top-links a:hover {
+  text-decoration: underline;
+}
+
+.nav {
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  display: flex;
+  gap: 5px;
+}
+
+.nav a {
+  padding: 9px 14px;
+  color: #fff;
+  background: #555;
+  text-decoration: none;
+  font: 600 14px Oswald, sans-serif;
+  transition: .2s;
+}
+
+.nav a:hover {
+  background: #333;
+}
+
+.nav .selected {
+  background: #888;
+}
+
+.page-section {
+  margin-top: 14px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.eyebrow {
+  color: #666;
+  font: 600 12px Oswald, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+h1 {
+  font: 600 34px Oswald, sans-serif;
+  margin: 5px 0 12px;
+  color: #292929;
+}
+
+h2 {
+  font-family: Oswald, sans-serif;
+}
+
+.hero {
+  min-height: 390px;
+  padding: 55px 50px;
+  background:
+    linear-gradient(rgba(30,30,30,.72), rgba(30,30,30,.72)),
+    url("https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1400&q=85");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,.18);
+}
+
+.hero .eyebrow {
+  color: #ddd;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 48px;
+  line-height: 1.05;
+  margin: 8px 0 15px;
+}
+
+.hero p {
+  max-width: 570px;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #eee;
+}
+
+.hero button,
+.location button,
+.help-box button {
+  width: fit-content;
+  border: 0;
+  background: #555;
+  color: white;
+  padding: 13px 20px;
+  cursor: pointer;
+  font: 700 16px Oswald, sans-serif;
+  transition: .2s;
+}
+
+.hero button:hover,
+.location button:hover,
+.help-box button:hover {
+  background: #333;
+}
+
+.intro-box {
+  margin-top: 14px;
+  background: rgba(255,255,255,.96);
+  padding: 22px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.10);
+}
+
+.intro-box h2 {
+  margin: 0 0 7px;
+  font-size: 22px;
+}
+
+.intro-box p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.section-heading {
+  background: rgba(255,255,255,.96);
+  padding: 22px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.10);
+}
+
+.section-heading h1 {
+  margin-bottom: 5px;
+}
+
+.section-heading p {
+  margin: 0;
+  color: #666;
+  font-size: 13px;
+}
+
+.animal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.animal-card {
+  background: rgba(255,255,255,.97);
+  border: 5px solid rgba(255,255,255,.97);
+  box-shadow: 0 2px 8px rgba(0,0,0,.14);
+  cursor: pointer;
+  transition:
+    transform .15s ease,
+    box-shadow .15s ease;
+  overflow: hidden;
+}
+
+.animal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.22);
+}
+
+.animal-image {
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(10%);
+  transition: transform .25s ease;
+}
+
+.animal-card:hover .animal-image {
+  transform: scale(1.02);
+}
+
+.cat {
+  background-image:
+    url("https://www.vaseveterina.cz/wp-content/uploads/2019/02/DSC9037-zrei-1024x701.jpg");
+  background-position: center center;
+}
+
+.dog {
+  background-image:
+    url("https://cdn.pixabay.com/photo/2019/08/26/06/26/black-dog-4430892_640.jpg");
+  background-position: center center;
+}
+
+.camel {
+  background-image:
+    url("https://www.zoo-olomouc.cz/sites/default/files/2024-06/dsc_9758_0.jpg");
+  background-position: center center;
+}
+
+.wolf {
+  background-image:
+    url("https://upload.wikimedia.org/wikipedia/commons/9/94/Canis_lupus_arctos_-_Tiergarten_Sch%C3%B6nbrunn_2.jpg");
+  background-position: center center;
+}
+
+.card-body {
+  padding: 12px 12px 15px;
+}
+
+.card-body h2 {
+  margin: 0;
+  color: #333;
+  font: 600 25px Oswald, sans-serif;
+}
+
+.card-body p {
+  margin: 2px 0 8px;
+  font-size: 11px;
+  color: #666;
+}
+
+.card-body span {
+  color: #555;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.back-button {
+  border: 0;
+  background: rgba(255,255,255,.95);
+  color: #444;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font: 600 13px Oswald, sans-serif;
+}
+
+.back-button:hover {
+  background: #ddd;
+}
+
+.animal-detail {
+  background: rgba(255,255,255,.97);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 28px;
+  align-items: start;
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+
+.detail-photo {
+  width: 100%;
+  min-height: 390px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 5px solid #fff;
+  box-shadow: 0 2px 7px rgba(0,0,0,.18);
+  filter: grayscale(10%);
+}
+
+.detail-content h1 {
+  font-size: 38px;
+  margin: 3px 0 15px;
+}
+
+.detail-content h2 {
+  color: #555;
+  font: 600 20px Oswald, sans-serif;
+  margin: 15px 0 8px;
+}
+
+.detail-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 13px;
+}
+
+.location {
+  margin-top: 28px;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.step {
+  background: rgba(255,255,255,.96);
+  padding: 25px;
+  min-height: 210px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.10);
+}
+
+.step-number {
+  font: 700 36px Oswald, sans-serif;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.step h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.step p {
+  color: #555;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.help-box {
+  margin-top: 14px;
+  background: #555;
+  color: white;
+  padding: 28px;
+}
+
+.help-box h2 {
+  margin: 0 0 8px;
+  font-size: 25px;
+}
+
+.help-box p {
+  margin: 0 0 18px;
+  color: #eee;
+}
+
+.help-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.help-card {
+  background: rgba(255,255,255,.97);
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+
+.help-card h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.help-card p {
+  color: #777;
+  margin: 2px 0 20px;
+}
+
+.help-card button {
+  border: 0;
+  background: #555;
+  color: white;
+  padding: 11px 15px;
+  cursor: pointer;
+  font: 700 14px Oswald, sans-serif;
+}
+
+.help-card button:hover {
+  background: #333;
+}
+
+
+/* KONTAKT */
+
+.contact-section {
+  padding: 30px;
+  background: rgba(255,255,255,.96);
+  box-shadow: 0 2px 8px rgba(0,0,0,.10);
+}
+
+.contact-section h1 {
+  margin: 5px 0 8px;
+}
+
+.contact-intro {
+  margin: 0 0 24px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.contact-card {
+  background: #f1f1f1;
+  padding: 22px;
+  border-left: 4px solid #555;
+  transition: .2s;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(0,0,0,.10);
+}
+
+.contact-card strong {
+  font: 600 18px Oswald, sans-serif;
+  color: #333;
+}
+
+.contact-card p {
+  margin: 8px 0 0;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.contact-message {
+  margin-top: 14px;
+  padding: 24px;
+  background: #555;
+  color: white;
+}
+
+.contact-message h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.contact-message p {
+  margin: 0;
+  color: #eee;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.contact-section small {
+  display: block;
+  margin-top: 18px;
+  color: #888;
+  font-size: 10px;
+}
+
+footer {
+  margin-top: 14px;
+  min-height: 88px;
+  padding: 22px 18px;
+  background: rgba(35,35,35,.96);
+  color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.65);
+  place-items: center;
+  z-index: 20;
+  padding: 20px;
+}
+
+.modal.show {
+  display: grid;
+}
+
+.modal-box {
+  width: min(410px, 100%);
+  background: #fff;
+  padding: 28px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0,0,0,.35);
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  border: 0;
+  background: transparent;
+  font-size: 28px;
+  cursor: pointer;
+  color: #444;
+}
+
+.big-paw {
+  font-size: 42px;
+  filter: grayscale(1);
+}
+
+.modal-box h2 {
+  font: 600 28px Oswald, sans-serif;
+  margin: 0 0 8px;
+}
+
+.modal-box p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.amounts {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 18px 0;
+}
+
+.amounts button {
+  border: 0;
+  background: #555;
+  color: #fff;
+  padding: 9px 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.amounts button:hover {
+  background: #333;
+}
+
+.modal-box small {
+  color: #777;
+}
+
+@media (max-width: 850px) {
+
+  .page {
+    width: min(100% - 18px, 700px);
+  }
+
+  .top-links {
+    display: none;
+  }
+
+  .nav {
+    position: static;
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+
+  .nav a {
+    flex: 1 1 45%;
+    text-align: center;
+  }
+
+  .header {
+    padding-bottom: 10px;
+  }
+
+  .animal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .animal-image {
+    height: 320px;
+  }
+
+  .animal-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-photo {
+    min-height: 350px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .help-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .animal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .animal-image {
+    height: 270px;
+  }
+
+  .hero {
+    padding: 35px 25px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .intro-box,
+  .section-heading {
+    padding: 18px;
+  }
+
+  .animal-detail {
+    padding: 14px;
+  }
+
+  .detail-photo {
+    min-height: 280px;
+  }
+
+  .contact-section {
+    padding: 20px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
