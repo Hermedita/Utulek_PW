@@ -6,39 +6,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0e7303f-f1e0-4992-b749-835fe5a7bdcb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Adoption.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/AdoptionRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Animal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Breed.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Donation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/AnimalListing.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Location.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Payment.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Role.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Species.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/TypeOfCare.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/AnimalStatus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/PaymentStatus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/RequestStatus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/ShelterDbContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shelter_Hervas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shelter_Hervas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/Debug/net10.0/Shelter_Hervas.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/Debug/net10.0/Shelter_Hervas.Application.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/Debug/net10.0/Shelter_Hervas.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/Debug/net10.0/Shelter_Hervas.Application.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/Debug/net10.0/Shelter_Hervas.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/Debug/net10.0/Shelter_Hervas.Domain.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/Debug/net10.0/Shelter_Hervas.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/Debug/net10.0/Shelter_Hervas.Domain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Shelter_Hervas.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Shelter_Hervas.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Shelter_Hervas.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Shelter_Hervas.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Shelter_Hervas.Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Shelter_Hervas.Infrastructure.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Shelter_Hervas.Infrastructure.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Shelter_Hervas.Infrastructure.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Web.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Shelter_Hervas.Web.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Shelter_Hervas.Web.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Shelter_Hervas.Web.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Shelter_Hervas.Web.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Shelter_Hervas.Web.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Shelter_Hervas.Web.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/NewFile1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,26 +35,43 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/AdoptionRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Donation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/AnimalListing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Location.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Species.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/TypeOfCare.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/AnimalStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/PaymentStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/RequestStatus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/ShelterDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="3JgAuzWXD3OasaU0DCJrcUq5O80" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Shelter_Hervas.Web: http">
     <configuration name="Shelter_Hervas.Web: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Shelter_Hervas.Web.csproj" />
@@ -111,7 +115,7 @@
       <updated>1790072564394</updated>
       <workItem from="1790072572240" duration="652000" />
       <workItem from="1790096725865" duration="605000" />
-      <workItem from="1790672787608" duration="310000" />
+      <workItem from="1790672787608" duration="3849000" />
     </task>
     <servers />
   </component>

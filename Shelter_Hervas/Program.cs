@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using Shelter_Hervas.Infrastructure.Database;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//SQL
+var connectionString = builder.Configuration.GetConnectionString("MySQL");
+var serverVersion = ServerVersion.AutoDetect(connectionString);
+builder.Services.AddDbContext<ShelterDbContext>(optionBuilder => optionBuilder.UseMySql(connectionString, serverVersion));
 
 var app = builder.Build();
 
