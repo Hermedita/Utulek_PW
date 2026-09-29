@@ -10,4 +10,13 @@
       <ProjectReference Include="..\Shelter_Hervas.Domain\Shelter_Hervas.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.12" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.12">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microting.EntityFrameworkCore.MySql" Version="10.0.12" />
+    </ItemGroup>
+
 </Project>
