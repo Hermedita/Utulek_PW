@@ -1,4 +1,6 @@
-﻿namespace Shelter_Hervas.Domain.Entities;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore;
 
 //TODO: Db Animal
 //•	Animal_ID: int (PK)
@@ -8,8 +10,15 @@
 //•	Species_ID: int (FK)
 //•	Adoptable: bool
 
-
-public class Animal
+namespace Shelter_Hervas.Domain.Entities
 {
-    
+    [Table(nameof(Animal))]
+    public class Animal
+    {
+        [Key]
+        public int AnimalId { get; set; }
+        public string? Name { get; set; }
+        public int? Age { get; set; }
+        public string? Gender { get; set; }
+    }
 }

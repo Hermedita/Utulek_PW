@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LEOzuYNj1fM=",
+  "dgSpecHash": "KdnswkO6cnU=",
   "success": true,
   "projectFilePath": "C:\\Users\\bagri\\Documents\\GitHub\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Application\\Shelter_Hervas.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\bagri\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.12\\microsoft.entityframeworkcore.abstractions.10.0.12.nupkg.sha512"
+  ],
   "logs": []
 }

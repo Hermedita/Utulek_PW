@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shelter_Hervas.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a11683623aaa2fc0be05afb35441eb7b754e36ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0adcb34df28ab9256e1dbe1892b58775648ae24")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shelter_Hervas.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shelter_Hervas.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
