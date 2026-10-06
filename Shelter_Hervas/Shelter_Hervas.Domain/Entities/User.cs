@@ -1,4 +1,6 @@
-﻿namespace Shelter_Hervas.Domain.Entities;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Shelter_Hervas.Domain.Entities;
 
 //TODO: Db Users
 //•	User_ID: int (PK)
@@ -8,8 +10,13 @@
 //•	PasswordSalt: string
 //•	Role_ID: int (FK)
 
-
-public class User
+[Table(nameof(User))]
+public class User : Entity<int>
 {
+    public required string? LoginName { get; set; }
+    public required string? Email { get; set; }
+    public string? PasswordHash { get; set; }
+    public string? PasswordSalt { get; set; }
+    [ForeignKey(nameof(Role))] public Role RoleId { get; set; }
     
 }

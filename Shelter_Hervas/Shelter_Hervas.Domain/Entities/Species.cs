@@ -1,4 +1,6 @@
-﻿namespace Shelter_Hervas.Domain.Entities;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Shelter_Hervas.Domain.Entities;
 
 //TODO: Db Species
 //•	Species_ID: int (PK)
@@ -6,8 +8,9 @@
 //•	Breed_ID: int (FK)
 
 
-
-public class Species
+public class Species : Entity<int>
 {
+    public string? Type { get; set; }
+    [ForeignKey(nameof(Breed))] public required Breed BreedId { get; set; }
     
 }

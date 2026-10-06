@@ -13,12 +13,12 @@ using Microsoft.EntityFrameworkCore;
 namespace Shelter_Hervas.Domain.Entities
 {
     [Table(nameof(Animal))]
-    public class Animal
+    public class Animal : Entity<int>
     {
-        [Key]
-        public int AnimalId { get; set; }
         public string? Name { get; set; }
         public int? Age { get; set; }
         public string? Gender { get; set; }
+        [ForeignKey(nameof(Species))] public required Species SpeciesId { get; set; }
+        public required bool Adoptable{ get; set; }
     }
 }
