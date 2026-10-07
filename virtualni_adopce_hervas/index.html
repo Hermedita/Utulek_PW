@@ -3,487 +3,474 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Virtuální adopce HERVAS</title>
+  <title>Adopce a Virtuální Adopce Zvířat | HERVAS</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="page">
 
+  <!-- HEADER -->
   <header class="header">
-
-    <div class="brand">
-      <div class="brand-mark">🐾</div>
-
+    <div class="brand" onclick="showSection('uvod')" style="cursor: pointer;">
+      <div class="brand-mark">HERVAS</div>
       <div>
-        <div class="brand-name">HERVAS</div>
-        <div class="brand-sub">VIRTUÁLNÍ ADOPCE ZVÍŘAT</div>
+        <div class="brand-sub">ADOPCE A VIRTUÁLNÍ PÉČE O ZVÍŘATA</div>
       </div>
     </div>
 
+    <!-- HORNÍ ODKAZY S TLAČÍTKEM KONTAKT -->
     <div class="top-links">
-      <a href="#uvod" onclick="showSection('uvod')">O projektu</a>
-      <a href="#pomoc" onclick="showSection('pomoc')">Jak pomáhat</a>
-      <a href="#kontakt" onclick="showSection('kontakt')">Kontakt</a>
+      <a href="#kontakt" onclick="scrollToContact()">✉️ KONTAKT</a>
+      <span id="authTopLinks"></span>
     </div>
 
     <nav class="nav">
       <a href="#uvod" onclick="showSection('uvod')">ÚVOD</a>
-      <a href="#zvirata" onclick="showSection('zvirata')">ZVÍŘATA</a>
-      <a href="#adopce" onclick="showSection('adopce')">VIRTUÁLNÍ ADOPCE</a>
+      <a href="#zvirata" onclick="showSection('zvirata')">KATALOG ZVÍŘAT</a>
+      <a href="#adopce" onclick="showSection('adopce')">JAK ADOPTOVAT</a>
       <a href="#pomoc" onclick="showSection('pomoc')">CHCI POMOCI</a>
+      <a href="#profil" id="navProfilLink" class="hidden" onclick="showSection('profil')">MŮJ PROFIL</a>
+      <a href="#auth" id="navAuthLink" onclick="showSection('auth')">PŘIHLÁŠENÍ / REGISTRACE</a>
     </nav>
-
   </header>
 
-
+  <!-- ÚVODNÍ STRÁNKA -->
   <main id="uvod" class="page-section">
+    <div class="hero" id="heroSlideshow">
+      <div class="hero-slide slide-in" id="heroSlide1"></div>
+      <div class="hero-slide slide-out" id="heroSlide2"></div>
 
-    <div class="hero">
-
-      <span class="eyebrow">HERVAS · VIRTUÁLNÍ ADOPCE</span>
-
-      <h1>
-        Pomozte zvířeti,<br>
-        které potřebuje péči.
-      </h1>
-
-      <p>
-        Ne každé zvíře může najít nový domov.
-        Virtuální adopce umožňuje dlouhodobě pomáhat
-        s krmivem, veterinární péčí a každodenními náklady.
-      </p>
-
-      <button onclick="showSection('zvirata')">
-        VYBRAT ZVÍŘE
-      </button>
-
+      <div class="hero-overlay">
+        <span class="eyebrow">HERVAS · ZÁCHRANNÉ CENTRUM A ADOPCE</span>
+        <h1>Pomozte zvířeti,<br>které potřebuje lásku a péči.</h1>
+        <p>
+          Každé zvíře má svůj jedinečný příběh. Nabízíme možnost klasické reálné adopce do nového domova, stejně jako možnost virtuální adopce pro zvířata, která potřebují trvalou nebo dlouhodobou péči.
+        </p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 15px;">
+          <button onclick="showSection('zvirata')">PROHLÉDNOUT KATALOG ZVÍŘAT</button>
+          <button onclick="showSection('adopce')" style="background: #444;">JAK ADOPTOVAT</button>
+        </div>
+      </div>
     </div>
 
-
-    <section class="intro-box">
-
-      <h2>VIRTUÁLNÍ ADOPCE</h2>
-
-      <p>
-        Vyberte si zvíře, poznejte jeho příběh a zvolte si
-        měsíční příspěvek podle svých možností.
-      </p>
-
+    <section class="intro-box" style="margin-top: 16px;">
+      <h2>DVĚ MOŽNOSTI ADOPCE V HERVAS</h2>
+      <div class="adoption-types-grid">
+        <div class="type-card">
+          <h3>REÁLNÁ ADOPCE</h3>
+          <p>
+            Hledáte nového čtyřnohého člena rodiny? Vyberte si zvíře určené k adopci, podávejte žádost s motivačním dopisem a poskytněte mu trvalý domov u vás doma.
+          </p>
+        </div>
+        <div class="type-card">
+          <h3>VIRTUÁLNÍ ADOPCE</h3>
+          <p>
+            Nemůžete si vzít zvíře domů, ale chcete pomáhat? Virtuální adopcí přispíváte měsíční částkou na krmivo, léky a veterinární péči vybranému zvířeti přímo v našem azylu.
+          </p>
+        </div>
+      </div>
     </section>
 
-  </main>
-
-
-  <main id="zvirata" class="page-section hidden">
-
-    <div class="section-heading">
-
-      <span class="eyebrow">POMÁHEJTE S NÁMI</span>
-
-      <h1>Zvířata ve virtuální adopci</h1>
-
-      <p>
-        Vyberte si zvíře a prohlédněte si jeho příběh.
+    <!-- SEKCE KONTAKT -->
+    <section id="kontakt" class="contact-section" style="margin-top: 16px;">
+      <span class="eyebrow">JSME TU PRO VÁS</span>
+      <h1>KONTAKT A DOTAZY</h1>
+      <p class="contact-intro">
+        Máte dotaz k reálné adopci, návštěvě azylu nebo možnosti virtuální podpory? Napište nám nebo vyplňte formulář níže.
       </p>
 
-    </div>
-
-
-    <div class="animal-grid">
-
-      <article class="animal-card" onclick="showAnimal('Mína')">
-
-        <div class="animal-image cat"></div>
-
-        <div class="card-body">
-          <h2>Mína</h2>
-          <p>Kočka · 7 let</p>
-          <span>PROHLÉDNOUT PŘÍBĚH →</span>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <strong>ZÁCHRANNÝ AZYL HERVAS</strong>
+          <p>U Zvířat 15<br>100 00 Praha 10</p>
         </div>
-
-      </article>
-
-
-      <article class="animal-card" onclick="showAnimal('Max')">
-
-        <div class="animal-image dog"></div>
-
-        <div class="card-body">
-          <h2>Max</h2>
-          <p>Pes · 9 let</p>
-          <span>PROHLÉDNOUT PŘÍBĚH →</span>
+        <div class="contact-card">
+          <strong>TELEFONNÍ SPOJENÍ</strong>
+          <p>+420 777 123 456<br><small>(Po–Pá: 9:00–16:00)</small></p>
         </div>
-
-      </article>
-
-
-      <article class="animal-card" onclick="showAnimal('Karim')">
-
-        <div class="animal-image camel"></div>
-
-        <div class="card-body">
-          <h2>Karim</h2>
-          <p>Velbloud · 12 let</p>
-          <span>PROHLÉDNOUT PŘÍBĚH →</span>
+        <div class="contact-card">
+          <strong>E-MAIL</strong>
+          <p>info@hervas.cz<br>adopce@hervas.cz</p>
         </div>
-
-      </article>
-
-
-      <article class="animal-card" onclick="showAnimal('Argo')">
-
-        <div class="animal-image wolf"></div>
-
-        <div class="card-body">
-          <h2>Argo</h2>
-          <p>Vlk · 6 let</p>
-          <span>PROHLÉDNOUT PŘÍBĚH →</span>
+        <div class="contact-card">
+          <strong>NÁVŠTĚVNÍ HODINY</strong>
+          <p>So–Ne: 10:00–15:00<br><small>(po předchozí domluvě)</small></p>
         </div>
+      </div>
 
-      </article>
-
-    </div>
-
+      <div class="contact-form-box">
+        <h2>NAPIŠTE NÁM ZPRÁVU</h2>
+        <form onsubmit="handleContactSubmit(event)">
+          <div class="form-row">
+            <input type="text" id="contactName" placeholder="Vaše jméno a příjmení" required>
+            <input type="email" id="contactEmail" placeholder="Váš e-mail" required>
+          </div>
+          <textarea id="contactMessage" rows="4" placeholder="Napište nám váš dotaz nebo vzkaz..." required></textarea>
+          <button type="submit">ODESLAT ZPRÁVU</button>
+        </form>
+      </div>
+    </section>
   </main>
 
+  <!-- KATALOG ZVÍŘAT -->
+  <main id="zvirata" class="page-section hidden">
+    <div class="section-heading">
+      <span class="eyebrow">NAJDI SVÉHO PARŤÁKA NEBO SVOJEHO CHRÁNĚNCE</span>
+      <h1>Katalog zvířat k adopci</h1>
+      <p>Využijte filtr pro vyhledání podle druhu, pohlaví a věku.</p>
+    </div>
 
+    <div class="filter-box">
+      <div class="filter-group">
+        <label>Druh:</label>
+        <select id="filterType" onchange="applyFilters()">
+          <option value="all">Všechny druhy</option>
+          <option value="Pes">Psi</option>
+          <option value="Kočka">Kočky</option>
+          <option value="Ostatní">Ostatní</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Pohlaví:</label>
+        <select id="filterGender" onchange="applyFilters()">
+          <option value="all">Všechna pohlaví</option>
+          <option value="Samec">Samec</option>
+          <option value="Samice">Samice</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Věk:</label>
+        <select id="filterAge" onchange="applyFilters()">
+          <option value="all">Všechny věkové kategorie</option>
+          <option value="young">Mladí (do 3 let)</option>
+          <option value="adult">Dospělí (3–8 let)</option>
+          <option value="senior">Senior (nad 8 let)</option>
+        </select>
+      </div>
+
+      <button class="reset-btn" onclick="resetFilters()">RESETOVAT FILTR</button>
+    </div>
+
+    <div class="animal-grid" id="animalGrid">
+      <!-- Vkládá se dynamicky JS -->
+    </div>
+
+    <div class="pagination" id="paginationControls">
+      <!-- Tlačítka se generují dynamicky -->
+    </div>
+  </main>
+
+  <!-- DETAIL ZVÍŘETE -->
   <main id="detail" class="page-section hidden">
-
-    <button class="back-button" onclick="showSection('zvirata')">
-      ← ZPĚT NA ZVÍŘATA
-    </button>
-
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+      <button class="back-button" onclick="showSection('zvirata')" style="margin-bottom: 0;">← ZPĚT NA KATALOG</button>
+      <button id="btnDeleteAnimalDetail" class="hidden logout-btn" onclick="deleteAnimalFromDetail()">🗑️ SMAZAT ZVÍŘE</button>
+    </div>
 
     <article class="animal-detail">
-
       <div class="detail-photo" id="detailPhoto"></div>
 
-
       <div class="detail-content">
-
-        <span class="eyebrow">
-          VIRTUÁLNÍ ADOPCE
-        </span>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span class="eyebrow" id="detailTypeGender"></span>
+          <span id="detailStatusBadge" class="badge"></span>
+        </div>
 
         <h1 id="detailName"></h1>
 
-        <h2>PŘÍBĚH ZVÍŘETE</h2>
-
+        <h2>O ZVÍŘETI A JEHO PŘÍBĚH</h2>
         <p id="detailIntro"></p>
-
         <p id="detailText"></p>
 
-
-        <h2>JAK VAŠE POMOC POMÁHÁ</h2>
-
+        <h2>PÉČE A POTŘEBY</h2>
         <p id="detailCare"></p>
 
-
         <div class="location">
-
-          <h2>KDE SE ZVÍŘE NACHÁZÍ</h2>
-
+          <h2>UMÍSTĚNÍ</h2>
           <p id="detailLocation"></p>
 
-          <button onclick="openAdoption()">
-            CHCI VIRTUÁLNĚ ADOPTOVAT
-          </button>
-
+          <div id="adoptionButtonsContainer" style="display: flex; gap: 12px; margin-top: 18px; flex-wrap: wrap;">
+            <button id="btnRealAdoption" onclick="openRealAdoptionModal()">ŽÁDOST O REÁLNOU ADOPCI</button>
+            <button id="btnVirtualAdoption" onclick="openVirtualAdoptionModal()" style="background: #2a7b4c;">VIRTUÁLNÍ ADOPCE</button>
+          </div>
+          
+          <p id="adoptionUnavailableNotice" class="hidden" style="color: #777; font-style: italic; margin-top: 15px;">
+            Toto zvíře momentálně není k dispozici k adopci (bylo již adoptováno nebo je v karanténě).
+          </p>
         </div>
-
       </div>
-
     </article>
-
   </main>
 
-
+  <!-- JAK ADOPTOVAT -->
   <main id="adopce" class="page-section hidden">
-
     <div class="section-heading">
-
-      <span class="eyebrow">JAK TO FUNGUJE</span>
-
-      <h1>Virtuální adopce</h1>
-
-      <p>
-        Jednoduchý způsob, jak pravidelně pomáhat zvířatům v péči HERVAS.
-      </p>
-
+      <span class="eyebrow">PRŮVODCE ADOPCÍ</span>
+      <h1>Jak probíhá adopční proces?</h1>
+      <p>Vyberte si cestu, jak chcete pomoci – reálně nebo virtuálně.</p>
     </div>
-
 
     <div class="steps">
-
       <div class="step">
-
         <div class="step-number">01</div>
-
-        <h2>VYBERETE ZVÍŘE</h2>
-
-        <p>
-          Prohlédnete si zvířata a vyberete to,
-          kterému chcete pomáhat.
-        </p>
-
+        <h2>VÝBĚR ZVÍŘETE</h2>
+        <p>Prohlédnete si náš katalog zvířat a vyberete to, které vás nejvíce oslovilo.</p>
       </div>
 
-
       <div class="step">
-
         <div class="step-number">02</div>
-
-        <h2>ZVOLÍTE PŘÍSPĚVEK</h2>
-
-        <p>
-          Vyberete si měsíční částku podle svých možností.
-        </p>
-
+        <h2>ODESLÁNÍ ŽÁDOSTI</h2>
+        <p>U reálné adopce vyplníte motivační dopis. U virtuální adopce zvolíte měsíční finanční příspěvek.</p>
       </div>
-
 
       <div class="step">
-
         <div class="step-number">03</div>
-
-        <h2>POMÁHÁTE</h2>
-
-        <p>
-          Váš příspěvek pomáhá s krmivem,
-          péčí a veterinárními náklady.
-        </p>
-
+        <h2>SCHVÁLENÍ A PÉČE</h2>
+        <p>Náš manažer žádost posoudí. Po schválení se těšíte z nového člena rodiny nebo dostáváte zprávy od chráněnce.</p>
       </div>
-
     </div>
-
-
-    <div class="help-box">
-
-      <h2>CHCETE ZAČÍT?</h2>
-
-      <p>
-        Prohlédněte si zvířata zapojená do virtuální adopce.
-      </p>
-
-      <button onclick="showSection('zvirata')">
-        ZOBRAZIT ZVÍŘATA
-      </button>
-
-    </div>
-
   </main>
 
-
+  <!-- CHCI POMOCI -->
   <main id="pomoc" class="page-section hidden">
-
     <div class="section-heading">
-
       <span class="eyebrow">PODPORA HERVAS</span>
-
-      <h1>Chci pomoci</h1>
-
-      <p>
-        Každý příspěvek pomáhá zajistit zvířatům potřebnou péči.
-      </p>
-
+      <h1>Chci pomoci obecným příspěvkem</h1>
+      <p>Vaše finanční podpora pomáhá hradit provoz celého záchranného azylu.</p>
     </div>
-
 
     <div class="help-options">
-
       <div class="help-card">
-
         <h2>100 Kč</h2>
-
         <p>měsíčně</p>
-
-        <button onclick="generalAdoption(100)">
-          POMOCI 100 Kč
-        </button>
-
+        <button onclick="generalAdoption(100)">POMOCI 100 Kč</button>
       </div>
 
-
       <div class="help-card">
-
         <h2>250 Kč</h2>
-
         <p>měsíčně</p>
-
-        <button onclick="generalAdoption(250)">
-          POMOCI 250 Kč
-        </button>
-
+        <button onclick="generalAdoption(250)">POMOCI 250 Kč</button>
       </div>
-
 
       <div class="help-card">
-
         <h2>500 Kč</h2>
-
         <p>měsíčně</p>
-
-        <button onclick="generalAdoption(500)">
-          POMOCI 500 Kč
-        </button>
-
+        <button onclick="generalAdoption(500)">POMOCI 500 Kč</button>
       </div>
+    </div>
+  </main>
+
+  <!-- PŘIHLÁŠENÍ / REGISTRACE -->
+  <main id="auth" class="page-section hidden">
+    <div class="auth-container">
+      <div class="auth-box">
+        <h2>PŘIHLÁŠENÍ</h2>
+        <form onsubmit="handleLogin(event)">
+          <input type="email" id="loginEmail" placeholder="E-mail" required>
+          <input type="password" id="loginPassword" placeholder="Heslo" required>
+          <button type="submit">PŘIHLÁSIT SE</button>
+        </form>
+
+        <div style="margin-top: 20px; font-size: 13px; background: #eee; padding: 12px; border-left: 4px solid #555;">
+          <strong>TESTOVACÍ ÚČTY PRO OVĚŘENÍ:</strong><br>
+          • Admin: <code>admin@hervas.cz</code><br>
+          • Manažer: <code>manager@hervas.cz</code><br>
+          • Uživatel: <code>jan@example.com</code><br>
+          <em>(Heslo může být libovolné)</em>
+        </div>
+      </div>
+
+      <div class="auth-box">
+        <h2>NOVÁ REGISTRACE</h2>
+        <form onsubmit="handleRegister(event)">
+          <input type="text" id="regName" placeholder="Jméno a příjmení" required>
+          <input type="email" id="regEmail" placeholder="E-mail" required>
+          <input type="password" id="regPassword" placeholder="Heslo" required>
+          <input type="password" id="regPasswordConfirm" placeholder="Heslo znovu" required>
+          <button type="submit">REGISTROVAT SE</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- KLIENTSKÁ ZÓNA / UŽIVATELSKÝ PROFIL -->
+  <main id="profil" class="page-section hidden">
+    <div class="profile-layout">
+      
+      <!-- LEVÝ SLOUPEC: NAVIGAČNÍ MENU / KATEGORIE -->
+      <aside class="profile-sidebar">
+        <div class="user-info-card">
+          <span class="eyebrow">PŘIHLÁŠENÝ UŽIVATEL</span>
+          <h2 id="profileName">Vítejte</h2>
+          <span id="profileRoleBadge" class="role-badge"></span>
+          <p id="profileEmail" style="font-size: 12px; color: #666; margin-top: 6px;"></p>
+        </div>
+
+        <nav class="profile-menu">
+          <button class="profile-menu-item active" id="tabBtnTransactions" onclick="switchProfileTab('transactions')">
+            💳 Moje transakce a žádosti
+          </button>
+          <button class="profile-menu-item" id="tabBtnSettings" onclick="switchProfileTab('settings')">
+            ⚙️ Nastavení účtu
+          </button>
+          <button class="profile-menu-item hidden" id="tabBtnManager" onclick="switchProfileTab('manager')">
+            🛠️ Manažerský panel
+          </button>
+          <button class="profile-menu-item hidden" id="tabBtnAdminRoles" onclick="switchProfileTab('adminRoles')">
+            👑 Správa uživatelských rolí
+          </button>
+          <button class="profile-menu-item logout-item" onclick="handleLogout()">
+            🚪 Odhlásit se
+          </button>
+        </nav>
+      </aside>
+
+      <!-- PRAVÝ SLOUPEC: OBSAHOVÁ ČÁST -->
+      <section class="profile-content">
+        
+        <!-- KATEGORIE 1: TRANSAKCE A ŽÁDOSTI -->
+        <div id="tabContentTransactions" class="tab-pane">
+          <div class="section-heading" style="padding: 18px; margin-bottom: 16px;">
+            <h1>Moje transakce a žádosti o adopci</h1>
+            <p>Přehled všech vašich proběhlých virtuálních příspěvků a podaných žádostí o adopci.</p>
+          </div>
+          <div id="userTransactionsList" class="transactions-list">
+            <!-- Vkládá se dynamicky JS -->
+          </div>
+        </div>
+
+        <!-- KATEGORIE 2: NASTAVENÍ ÚČTU -->
+        <div id="tabContentSettings" class="tab-pane hidden">
+          <div class="section-heading" style="padding: 18px; margin-bottom: 16px;">
+            <h1>Nastavení profilu a zabezpečení</h1>
+            <p>Správa vašeho zákaznického účtu.</p>
+          </div>
+
+          <div class="profile-section">
+            <h3>Osobní údaje</h3>
+            <form onsubmit="handleUpdateProfile(event)" style="display: flex; flex-direction: column; gap: 12px; max-width: 420px;">
+              <label style="font-size: 13px; font-weight: bold;">Jméno a příjmení:</label>
+              <input type="text" id="editUserName" style="padding: 10px; border: 1px solid #ccc;" required>
+              <button type="submit" style="background: #555; color: white; border: 0; padding: 12px; font-weight: bold; cursor: pointer; width: fit-content;">ULOŽIT ZMĚNY</button>
+            </form>
+          </div>
+
+          <div class="profile-section" style="margin-top: 16px; border-left: 4px solid #8b0000;">
+            <h3>Zrušení účtu</h3>
+            <p style="font-size: 14px; color: #666;">Vymazáním účtu dojde k trvalému odstranění vašich údajů ze systému HERVAS.</p>
+            <button onclick="deleteUserAccount()" class="delete-account-btn">⚠️ TRVALE SMAZAT ÚČET</button>
+          </div>
+        </div>
+
+        <!-- KATEGORIE 3: MANAŽERSKÝ PANEL -->
+        <div id="tabContentManager" class="tab-pane hidden">
+          <div class="section-heading" style="padding: 18px; margin-bottom: 16px;">
+            <h1>Manažerský panel správce</h1>
+            <p>Schvalování žádostí a správa zvířat v nabídce.</p>
+          </div>
+
+          <div class="manager-sub-section">
+            <h3>1. Správa žádostí a transakcí uživatelů</h3>
+            <div id="managerRequestsList">
+              <!-- Dynamický seznam žádostí -->
+            </div>
+          </div>
+
+          <div class="manager-sub-section" style="margin-top: 16px;">
+            <h3>2. Přidat nové zvíře do nabídky</h3>
+            <form onsubmit="handleAddAnimal(event)" class="add-animal-form">
+              <input type="text" id="addName" placeholder="Jméno zvířete" required>
+              <select id="addType" required>
+                <option value="Pes">Pes</option>
+                <option value="Kočka">Kočka</option>
+                <option value="Ostatní">Ostatní</option>
+              </select>
+              <input type="text" id="addGender" placeholder="Pohlaví (Samec/Samice)" required>
+              <input type="number" id="addAge" placeholder="Věk (v letech)" required>
+              <select id="addStatus" required>
+                <option value="Active">Active</option>
+                <option value="Adopted">Adopted</option>
+                <option value="Deactivated">Deactivated</option>
+              </select>
+              <input type="text" id="addImage" placeholder="URL adresa obrázku zvířete" required>
+              <input type="text" id="addIntro" placeholder="Krátký úvod" required>
+              <textarea id="addText" placeholder="Celý příběh" required></textarea>
+              <textarea id="addCare" placeholder="Péče a potřeby" required></textarea>
+              <input type="text" id="addLocation" placeholder="Lokalita" required>
+              <button type="submit">PŘIDAT ZVÍŘE DO SYSTÉMU</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- KATEGORIE 4: SPRÁVA ROLÍ (POUZE PRO ADMINA) -->
+        <div id="tabContentAdminRoles" class="tab-pane hidden">
+          <div class="section-heading" style="padding: 18px; margin-bottom: 16px;">
+            <h1>Administrace uživatelských rolí</h1>
+            <p>Přiřazování a odebírání oprávnění Manažera a Administrátora.</p>
+          </div>
+
+          <div class="profile-section">
+            <h3>Seznam uživatelů a jejich oprávnění</h3>
+            <div id="adminUsersList" class="transactions-list">
+              <!-- Dynamický seznam uživatelů -->
+            </div>
+          </div>
+        </div>
+
+      </section>
 
     </div>
-
   </main>
 
-
-  <main id="kontakt" class="page-section hidden">
-
-    <button class="back-button" onclick="showSection('uvod')">
-      ← ZPĚT NA ÚVOD
-    </button>
-
-
-    <section class="contact-section">
-
-      <span class="eyebrow">NAPIŠTE NÁM</span>
-
-      <h1>KONTAKT</h1>
-
-      <p class="contact-intro">
-        Máte otázku k virtuální adopci nebo chcete zjistit více
-        o některém z našich zvířat? Kontaktujte nás.
-      </p>
-
-
-      <div class="contact-grid">
-
-        <div class="contact-card">
-
-          <strong>HERVAS</strong>
-
-          <p>
-            Virtuální adopce zvířat<br>
-            U Zvířat 15<br>
-            100 00 Praha 10
-          </p>
-
-        </div>
-
-
-        <div class="contact-card">
-
-          <strong>TELEFON</strong>
-
-          <p>
-            +420 777 123 456
-          </p>
-
-        </div>
-
-
-        <div class="contact-card">
-
-          <strong>E-MAIL</strong>
-
-          <p>
-            info@hervas.cz
-          </p>
-
-        </div>
-
-
-        <div class="contact-card">
-
-          <strong>OTEVÍRACÍ DOBA</strong>
-
-          <p>
-            Po–Pá: 9:00–16:00
-          </p>
-
-        </div>
-
+  <!-- POSUNUTÁ A ZPŘEHLEDNĚNÁ PATIČKA NAHOŘE NAD OKRAJE -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <strong>HERVAS ADOPČNÍ SYSTÉM</strong>
+        <p>Pomoc zvířatům v nouzi – reálné i virtuální adopce.</p>
       </div>
-
-
-      <div class="contact-message">
-
-        <h2>MÁTE DOTAZ?</h2>
-
-        <p>
-          Pokud potřebujete více informací o virtuální adopci,
-          můžete nás kontaktovat telefonicky nebo e-mailem.
-        </p>
-
+      <div style="text-align: right;">
+        <span>© 2026 HERVAS · Všechna práva vyhrazena</span><br>
+        <small style="color: #aaa;">U Zvířat 15, Praha 10 | +420 777 123 456</small>
       </div>
-
-
-      <small>
-        Kontaktní údaje jsou fiktivní a slouží pouze pro školní projekt.
-      </small>
-
-    </section>
-
-  </main>
-
-
-  <footer>
-
-    <span>
-      © 2026 HERVAS · Virtuální adopce zvířat
-    </span>
-
-    <span>
-      Pomoc, která má smysl.
-    </span>
-
+    </div>
   </footer>
 
 </div>
 
-
+<!-- MODÁLNÍ OKNA -->
 <div class="modal" id="adoptionModal">
-
   <div class="modal-box">
-
-    <button class="close" onclick="closeAdoption()">×</button>
-
-    <div class="big-paw">🐾</div>
-
-    <h2>Virtuální adopce</h2>
-
-    <p id="adoptText">
-      Děkujeme, že chcete pomoci.
-    </p>
-
-
+    <button class="close" onclick="closeAdoptionModal()">×</button>
+    <h2>VIRTUÁLNÍ ADOPCE</h2>
+    <p id="adoptText">Děkujeme, že chcete pomoci.</p>
     <div class="amounts">
-
-      <button onclick="chooseAmount(100)">
-        100 Kč
-      </button>
-
-      <button onclick="chooseAmount(250)">
-        250 Kč
-      </button>
-
-      <button onclick="chooseAmount(500)">
-        500 Kč
-      </button>
-
+      <button onclick="chooseAmount(100)">100 Kč</button>
+      <button onclick="chooseAmount(250)">250 Kč</button>
+      <button onclick="chooseAmount(500)">500 Kč</button>
     </div>
-
-
-    <small>
-      Demo formulář – platba zatím není připojena.
-    </small>
-
+    <small>Výběrem částky se odešle zkušební virtuální transakce do vašeho profilu.</small>
   </div>
-
 </div>
 
+<div class="modal" id="realAdoptionModal">
+  <div class="modal-box" style="width: min(520px, 100%);">
+    <button class="close" onclick="closeRealAdoptionModal()">×</button>
+    <h2>ŽÁDOST O REÁLNOU ADOPCI</h2>
+    <p id="realAdoptText"></p>
+    
+    <form onsubmit="submitRealAdoption(event)" style="text-align: left; margin-top: 15px;">
+      <label style="font-size: 13px; font-weight: bold;">Motivační dopis (Proč si chcete zvíře adoptovat?):</label>
+      <textarea id="realAdoptMotivation" rows="5" required style="width: 100%; margin-top: 6px; padding: 10px; border: 1px solid #ccc;" placeholder="Napište nám o vašich zkušenostech, domácích podmínkách a důvodu adopce..."></textarea>
+      
+      <button type="submit" style="width: 100%; margin-top: 12px; background: #555; color: white; padding: 12px; border: 0; font-weight: bold; cursor: pointer;">ODESLAT ŽÁDOST O ADOPCI</button>
+    </form>
+  </div>
+</div>
 
 <script src="script.js"></script>
-
 </body>
 </html>

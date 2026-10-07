@@ -8,10 +8,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ZVĚTŠENÍ ZÁKLADNÍHO TEXTU */
 body {
   margin: 0;
-  color: #292929;
+  color: #222;
   font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
   background:
     linear-gradient(rgba(225,225,225,.55), rgba(225,225,225,.55)),
     repeating-linear-gradient(
@@ -22,30 +25,15 @@ body {
     );
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  opacity: .08;
-  background:
-    repeating-linear-gradient(
-      100deg,
-      transparent 0 35px,
-      #fff 36px 38px,
-      transparent 39px 75px
-    );
-}
-
 .page {
-  width: min(1080px, calc(100% - 28px));
+  width: min(1100px, calc(100% - 28px));
   margin: 28px auto 35px;
 }
 
 .header {
   background: rgba(255,255,255,.96);
-  min-height: 125px;
-  padding: 15px 18px 0;
+  min-height: 130px;
+  padding: 16px 20px 0;
   border-bottom: 5px solid #555;
   position: relative;
   box-shadow: 0 2px 8px rgba(0,0,0,.12);
@@ -58,53 +46,55 @@ body::before {
 }
 
 .brand-mark {
-  font-size: 38px;
-  filter: grayscale(1);
-}
-
-.brand-name {
-  font: 700 34px Oswald, sans-serif;
+  font: 700 40px Oswald, sans-serif;
   letter-spacing: 2px;
-  color: #222;
+  color: #111;
 }
 
 .brand-sub {
-  color: #666;
-  font: 600 12px Oswald, sans-serif;
+  color: #555;
+  font: 600 13px Oswald, sans-serif;
   letter-spacing: 1.5px;
 }
 
+/* HORNÍ ODKAZY A TLAČÍTKO KONTAKT */
 .top-links {
   position: absolute;
   top: 16px;
-  right: 18px;
-  font-size: 11px;
+  right: 20px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .top-links a {
-  color: #444;
+  color: #333;
   text-decoration: none;
-  margin-left: 14px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 3px;
+  transition: background .2s;
 }
 
 .top-links a:hover {
-  text-decoration: underline;
+  background: #eee;
 }
 
 .nav {
   position: absolute;
-  right: 0;
+  right: 20px;
   bottom: 8px;
   display: flex;
-  gap: 5px;
+  gap: 6px;
 }
 
 .nav a {
-  padding: 9px 14px;
+  padding: 10px 16px;
   color: #fff;
   background: #555;
   text-decoration: none;
-  font: 600 14px Oswald, sans-serif;
+  font: 600 15px Oswald, sans-serif;
   transition: .2s;
 }
 
@@ -117,7 +107,7 @@ body::before {
 }
 
 .page-section {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 .hidden {
@@ -125,34 +115,58 @@ body::before {
 }
 
 .eyebrow {
-  color: #666;
-  font: 600 12px Oswald, sans-serif;
+  color: #555;
+  font: 600 13px Oswald, sans-serif;
   letter-spacing: 1.5px;
 }
 
 h1 {
-  font: 600 34px Oswald, sans-serif;
-  margin: 5px 0 12px;
-  color: #292929;
+  font: 600 36px Oswald, sans-serif;
+  margin: 6px 0 14px;
+  color: #222;
 }
 
 h2 {
   font-family: Oswald, sans-serif;
+  font-size: 24px;
 }
 
+/* HERO SLIDESHOW */
 .hero {
-  min-height: 390px;
-  padding: 55px 50px;
-  background:
-    linear-gradient(rgba(30,30,30,.72), rgba(30,30,30,.72)),
-    url("https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1400&q=85");
-  background-size: cover;
-  background-position: center;
+  min-height: 440px;
+  position: relative;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-shadow: 0 2px 10px rgba(0,0,0,.18);
+  overflow: hidden;
+  background-color: #222;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: opacity 1.8s ease-in-out;
+  opacity: 0;
+  z-index: 1;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 3;
+  background: rgba(30, 30, 30, 0.72);
+  width: 100%;
+  height: 100%;
+  padding: 55px 50px;
 }
 
 .hero .eyebrow {
@@ -161,15 +175,15 @@ h2 {
 
 .hero h1 {
   color: white;
-  font-size: 48px;
+  font-size: 50px;
   line-height: 1.05;
   margin: 8px 0 15px;
 }
 
 .hero p {
-  max-width: 570px;
+  max-width: 600px;
   line-height: 1.6;
-  font-size: 15px;
+  font-size: 16px;
   color: #eee;
 }
 
@@ -180,9 +194,9 @@ h2 {
   border: 0;
   background: #555;
   color: white;
-  padding: 13px 20px;
+  padding: 14px 22px;
   cursor: pointer;
-  font: 700 16px Oswald, sans-serif;
+  font: 700 17px Oswald, sans-serif;
   transition: .2s;
 }
 
@@ -193,44 +207,81 @@ h2 {
 }
 
 .intro-box {
-  margin-top: 14px;
   background: rgba(255,255,255,.96);
-  padding: 22px;
+  padding: 24px;
   box-shadow: 0 2px 8px rgba(0,0,0,.10);
 }
 
-.intro-box h2 {
-  margin: 0 0 7px;
-  font-size: 22px;
+.adoption-types-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 12px;
 }
 
-.intro-box p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.6;
+.type-card {
+  background: #f8f8f8;
+  padding: 18px;
+  border-left: 4px solid #555;
 }
 
 .section-heading {
   background: rgba(255,255,255,.96);
-  padding: 22px;
-  margin-bottom: 14px;
+  padding: 24px;
+  margin-bottom: 16px;
   box-shadow: 0 2px 8px rgba(0,0,0,.10);
 }
 
-.section-heading h1 {
-  margin-bottom: 5px;
+/* FILTRACE */
+.filter-box {
+  background: rgba(255,255,255,.96);
+  padding: 18px 24px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,.10);
 }
 
-.section-heading p {
-  margin: 0;
-  color: #666;
-  font-size: 13px;
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
+.filter-group label {
+  font: 600 13px Oswald, sans-serif;
+  color: #555;
+}
+
+.filter-group select {
+  padding: 9px 14px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  min-width: 150px;
+}
+
+.reset-btn {
+  background: #777;
+  color: white;
+  border: 0;
+  padding: 10px 18px;
+  font: 600 13px Oswald, sans-serif;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: #333;
+}
+
+/* MŘÍŽKA ZVÍŘAT A TLAČÍTKO SMAZAT V KATALOGU */
 .animal-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 
 .animal-card {
@@ -238,10 +289,11 @@ h2 {
   border: 5px solid rgba(255,255,255,.97);
   box-shadow: 0 2px 8px rgba(0,0,0,.14);
   cursor: pointer;
-  transition:
-    transform .15s ease,
-    box-shadow .15s ease;
+  transition: transform .15s ease, box-shadow .15s ease;
   overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .animal-card:hover {
@@ -250,456 +302,353 @@ h2 {
 }
 
 .animal-image {
-  height: 280px;
+  height: 220px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(10%);
-  transition: transform .25s ease;
-}
-
-.animal-card:hover .animal-image {
-  transform: scale(1.02);
-}
-
-.cat {
-  background-image:
-    url("https://www.vaseveterina.cz/wp-content/uploads/2019/02/DSC9037-zrei-1024x701.jpg");
-  background-position: center center;
-}
-
-.dog {
-  background-image:
-    url("https://cdn.pixabay.com/photo/2019/08/26/06/26/black-dog-4430892_640.jpg");
-  background-position: center center;
-}
-
-.camel {
-  background-image:
-    url("https://www.zoo-olomouc.cz/sites/default/files/2024-06/dsc_9758_0.jpg");
-  background-position: center center;
-}
-
-.wolf {
-  background-image:
-    url("https://upload.wikimedia.org/wikipedia/commons/9/94/Canis_lupus_arctos_-_Tiergarten_Sch%C3%B6nbrunn_2.jpg");
-  background-position: center center;
 }
 
 .card-body {
-  padding: 12px 12px 15px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .card-body h2 {
   margin: 0;
-  color: #333;
-  font: 600 25px Oswald, sans-serif;
+  color: #222;
+  font: 600 24px Oswald, sans-serif;
 }
 
 .card-body p {
-  margin: 2px 0 8px;
-  font-size: 11px;
-  color: #666;
-}
-
-.card-body span {
+  margin: 4px 0 12px;
+  font-size: 14px;
   color: #555;
-  font-size: 11px;
-  font-weight: 700;
 }
 
+.card-actions-row {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px dashed #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-animal-btn-card {
+  background: #b83232;
+  color: white;
+  border: 0;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background .2s;
+}
+
+.delete-animal-btn-card:hover {
+  background: #8b0000;
+}
+
+/* STÁTUSOVÉ ŠTÍTKY */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font: 700 12px Oswald, sans-serif;
+  letter-spacing: 0.5px;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.badge-active { background: #2a7b4c; }
+.badge-adopted { background: #b83232; }
+.badge-deactivated { background: #777; }
+
+/* STRÁNKOVÁNÍ */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.pagination button {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 9px 16px;
+  font: 600 15px Oswald, sans-serif;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background: #555;
+  color: white;
+  border-color: #555;
+}
+
+/* DETAIL ZVÍŘETE */
 .back-button {
   border: 0;
   background: rgba(255,255,255,.95);
   color: #444;
-  padding: 10px 14px;
-  margin-bottom: 12px;
+  padding: 11px 16px;
   cursor: pointer;
-  font: 600 13px Oswald, sans-serif;
+  font: 600 14px Oswald, sans-serif;
 }
 
-.back-button:hover {
-  background: #ddd;
-}
+.back-button:hover { background: #ddd; }
 
 .animal-detail {
   background: rgba(255,255,255,.97);
-  padding: 20px;
+  padding: 24px;
   display: grid;
-  grid-template-columns: 360px 1fr;
-  gap: 28px;
-  align-items: start;
+  grid-template-columns: 380px 1fr;
+  gap: 30px;
   box-shadow: 0 2px 8px rgba(0,0,0,.12);
 }
 
 .detail-photo {
   width: 100%;
-  min-height: 390px;
+  min-height: 380px;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   border: 5px solid #fff;
   box-shadow: 0 2px 7px rgba(0,0,0,.18);
-  filter: grayscale(10%);
 }
 
-.detail-content h1 {
-  font-size: 38px;
-  margin: 3px 0 15px;
-}
+.detail-content h1 { font-size: 42px; margin: 4px 0 16px; }
+.detail-content h2 { color: #444; font: 600 22px Oswald, sans-serif; margin: 18px 0 8px; }
+.detail-content p { font-size: 15px; line-height: 1.6; margin: 0 0 14px; }
 
-.detail-content h2 {
-  color: #555;
-  font: 600 20px Oswald, sans-serif;
-  margin: 15px 0 8px;
-}
-
-.detail-content p {
-  font-size: 14px;
-  line-height: 1.6;
-  margin: 0 0 13px;
-}
-
-.location {
-  margin-top: 28px;
-  border-top: 1px solid #ddd;
-  padding-top: 10px;
-}
-
-.steps {
+/* DVOUSLOUPCOVÝ PROFIL */
+.profile-layout {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  grid-template-columns: 290px 1fr;
+  gap: 22px;
+  align-items: start;
 }
 
-.step {
+.profile-sidebar {
   background: rgba(255,255,255,.96);
-  padding: 25px;
-  min-height: 210px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.10);
-}
-
-.step-number {
-  font: 700 36px Oswald, sans-serif;
-  color: #888;
-  margin-bottom: 12px;
-}
-
-.step h2 {
-  margin: 0 0 8px;
-  font-size: 20px;
-}
-
-.step p {
-  color: #555;
-  font-size: 13px;
-  line-height: 1.55;
-}
-
-.help-box {
-  margin-top: 14px;
-  background: #555;
-  color: white;
-  padding: 28px;
-}
-
-.help-box h2 {
-  margin: 0 0 8px;
-  font-size: 25px;
-}
-
-.help-box p {
-  margin: 0 0 18px;
-  color: #eee;
-}
-
-.help-options {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-}
-
-.help-card {
-  background: rgba(255,255,255,.97);
-  padding: 30px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,.12);
-}
-
-.help-card h2 {
-  font-size: 36px;
-  margin: 0;
-}
-
-.help-card p {
-  color: #777;
-  margin: 2px 0 20px;
-}
-
-.help-card button {
-  border: 0;
-  background: #555;
-  color: white;
-  padding: 11px 15px;
-  cursor: pointer;
-  font: 700 14px Oswald, sans-serif;
-}
-
-.help-card button:hover {
-  background: #333;
-}
-
-
-/* KONTAKT */
-
-.contact-section {
-  padding: 30px;
-  background: rgba(255,255,255,.96);
-  box-shadow: 0 2px 8px rgba(0,0,0,.10);
-}
-
-.contact-section h1 {
-  margin: 5px 0 8px;
-}
-
-.contact-intro {
-  margin: 0 0 24px;
-  color: #666;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-}
-
-.contact-card {
-  background: #f1f1f1;
   padding: 22px;
-  border-left: 4px solid #555;
+  box-shadow: 0 2px 8px rgba(0,0,0,.10);
+}
+
+.user-info-card {
+  padding-bottom: 16px;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 16px;
+}
+
+.user-info-card h2 {
+  margin: 6px 0;
+  font-size: 24px;
+}
+
+.profile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.profile-menu-item {
+  width: 100%;
+  text-align: left;
+  padding: 13px 16px;
+  background: #f5f5f5;
+  border: 0;
+  border-left: 4px solid transparent;
+  font: 600 14px Oswald, sans-serif;
+  cursor: pointer;
   transition: .2s;
-}
-
-.contact-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 14px rgba(0,0,0,.10);
-}
-
-.contact-card strong {
-  font: 600 18px Oswald, sans-serif;
   color: #333;
 }
 
-.contact-card p {
-  margin: 8px 0 0;
-  color: #666;
-  font-size: 13px;
-  line-height: 1.6;
+.profile-menu-item:hover {
+  background: #e8e8e8;
 }
 
-.contact-message {
-  margin-top: 14px;
-  padding: 24px;
+.profile-menu-item.active {
   background: #555;
+  color: white;
+  border-left-color: #222;
+}
+
+.profile-menu-item.logout-item {
+  margin-top: 16px;
+  background: #fff0f0;
+  color: #b83232;
+}
+
+.profile-menu-item.logout-item:hover {
+  background: #b83232;
   color: white;
 }
 
-.contact-message h2 {
-  margin: 0 0 8px;
-  font-size: 22px;
+.profile-content {
+  display: flex;
+  flex-direction: column;
 }
 
-.contact-message p {
-  margin: 0;
-  color: #eee;
-  font-size: 13px;
-  line-height: 1.6;
+.tab-pane {
+  display: flex;
+  flex-direction: column;
 }
 
-.contact-section small {
-  display: block;
-  margin-top: 18px;
-  color: #888;
-  font-size: 10px;
+.profile-section {
+  background: rgba(255,255,255,.96);
+  padding: 22px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.10);
 }
 
-footer {
-  margin-top: 14px;
-  min-height: 88px;
-  padding: 22px 18px;
-  background: rgba(35,35,35,.96);
-  color: #ddd;
+.role-badge {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 4px 10px;
+  font: 600 12px Oswald, sans-serif;
+  letter-spacing: 1px;
+}
+
+.logout-btn {
+  background: #b83232;
+  color: white;
+  border: 0;
+  padding: 11px 20px;
+  font: 600 15px Oswald, sans-serif;
+  cursor: pointer;
+}
+
+.delete-account-btn {
+  background: #8b0000;
+  color: white;
+  border: 0;
+  padding: 11px 16px;
+  font: 600 13px Oswald, sans-serif;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.transactions-list, #managerRequestsList, #adminUsersList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tx-card, .request-card, .user-role-card {
+  background: rgba(255,255,255,.96);
+  padding: 16px;
+  border-left: 4px solid #555;
   display: flex;
   justify-content: space-between;
-  font-size: 10px;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.65);
-  place-items: center;
-  z-index: 20;
-  padding: 20px;
+.manager-sub-section {
+  background: rgba(255,255,255,.96);
+  padding: 22px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.10);
 }
 
-.modal.show {
+.add-animal-form {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
 }
 
-.modal-box {
-  width: min(410px, 100%);
-  background: #fff;
-  padding: 28px;
-  text-align: center;
-  position: relative;
-  box-shadow: 0 10px 40px rgba(0,0,0,.35);
+.add-animal-form textarea {
+  grid-column: span 2;
+  height: 80px;
 }
 
-.close {
-  position: absolute;
-  top: 5px;
-  right: 12px;
-  border: 0;
-  background: transparent;
-  font-size: 28px;
-  cursor: pointer;
-  color: #444;
+.add-animal-form button {
+  grid-column: span 2;
 }
 
-.big-paw {
-  font-size: 42px;
-  filter: grayscale(1);
+/* AUTHENTIKACE */
+.auth-container { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.auth-box { background: rgba(255,255,255,.96); padding: 28px; box-shadow: 0 2px 8px rgba(0,0,0,.10); }
+.auth-box form { display: flex; flex-direction: column; gap: 14px; margin-top: 16px; }
+.auth-box input, .add-animal-form input, .add-animal-form select, .add-animal-form textarea { padding: 11px; border: 1px solid #ccc; font-family: Roboto, sans-serif; font-size: 15px; }
+.auth-box button, .add-animal-form button { background: #555; color: white; border: 0; padding: 13px; font: 700 15px Oswald, sans-serif; cursor: pointer; }
+.auth-box button:hover { background: #333; }
+
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.step { background: rgba(255,255,255,.96); padding: 26px; box-shadow: 0 2px 8px rgba(0,0,0,.10); }
+.step-number { font: 700 38px Oswald, sans-serif; color: #888; margin-bottom: 12px; }
+
+.help-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.help-card { background: rgba(255,255,255,.97); padding: 32px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,.12); }
+.help-card h2 { font-size: 38px; margin: 0; }
+.help-card button { border: 0; background: #555; color: white; padding: 12px 18px; cursor: pointer; font: 700 15px Oswald, sans-serif; }
+
+.contact-section { padding: 28px; background: rgba(255,255,255,.96); box-shadow: 0 2px 8px rgba(0,0,0,.10); }
+.contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 16px; }
+.contact-card { background: #f1f1f1; padding: 20px; border-left: 4px solid #555; }
+
+.contact-form-box { margin-top: 26px; background: #f8f8f8; padding: 22px; border: 1px solid #e0e0e0; }
+.contact-form-box h2 { margin-top: 0; font-size: 22px; }
+.contact-form-box form { display: flex; flex-direction: column; gap: 12px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.contact-form-box input, .contact-form-box textarea { padding: 11px; border: 1px solid #ccc; font-family: Roboto, sans-serif; font-size: 15px; }
+.contact-form-box button { background: #555; color: white; border: 0; padding: 13px 22px; font: 700 15px Oswald, sans-serif; cursor: pointer; width: fit-content; }
+.contact-form-box button:hover { background: #333; }
+
+/* OPRAVENÁ PATIČKA (POSUNUTÁ NAHORU A ZPŘEHLEDNĚNÁ) */
+.footer {
+  margin-top: 18px;
+  padding: 24px;
+  background: rgba(30, 30, 30, 0.96);
+  color: #eee;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.12);
 }
 
-.modal-box h2 {
-  font: 600 28px Oswald, sans-serif;
-  margin: 0 0 8px;
-}
-
-.modal-box p {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-.amounts {
+.footer-content {
   display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin: 18px 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
 }
 
-.amounts button {
-  border: 0;
-  background: #555;
-  color: #fff;
-  padding: 9px 15px;
-  font-weight: 700;
-  cursor: pointer;
+.footer strong {
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
-.amounts button:hover {
-  background: #333;
+.footer p {
+  margin: 4px 0 0;
+  color: #bbb;
 }
 
-.modal-box small {
-  color: #777;
-}
+/* MODAL */
+.modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.65); place-items: center; z-index: 20; padding: 20px; }
+.modal.show { display: grid; }
+.modal-box { width: min(440px, 100%); background: #fff; padding: 30px; text-align: center; position: relative; box-shadow: 0 10px 40px rgba(0,0,0,.35); }
+.close { position: absolute; top: 6px; right: 14px; border: 0; background: transparent; font-size: 30px; cursor: pointer; }
+.amounts { display: flex; justify-content: center; gap: 10px; margin: 20px 0; }
+.amounts button { border: 0; background: #555; color: #fff; padding: 10px 18px; font-weight: 700; font-size: 15px; cursor: pointer; }
 
+/* RESPONSIVITA */
 @media (max-width: 850px) {
-
-  .page {
-    width: min(100% - 18px, 700px);
-  }
-
-  .top-links {
-    display: none;
-  }
-
-  .nav {
-    position: static;
-    margin-top: 15px;
-    flex-wrap: wrap;
-  }
-
-  .nav a {
-    flex: 1 1 45%;
-    text-align: center;
-  }
-
-  .header {
-    padding-bottom: 10px;
-  }
-
-  .animal-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .animal-image {
-    height: 320px;
-  }
-
-  .animal-detail {
-    grid-template-columns: 1fr;
-  }
-
-  .detail-photo {
-    min-height: 350px;
-  }
-
-  .steps {
-    grid-template-columns: 1fr;
-  }
-
-  .help-options {
-    grid-template-columns: 1fr;
-  }
+  .profile-layout { grid-template-columns: 1fr; }
+  .animal-grid { grid-template-columns: repeat(2, 1fr); }
+  .animal-detail { grid-template-columns: 1fr; }
+  .auth-container { grid-template-columns: 1fr; }
+  .add-animal-form { grid-template-columns: 1fr; }
+  .add-animal-form textarea, .add-animal-form button { grid-column: span 1; }
+  .adoption-types-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-content { flex-direction: column; gap: 12px; text-align: center !important; }
 }
 
-@media (max-width: 500px) {
-
-  .animal-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .animal-image {
-    height: 270px;
-  }
-
-  .hero {
-    padding: 35px 25px;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-
-  .intro-box,
-  .section-heading {
-    padding: 18px;
-  }
-
-  .animal-detail {
-    padding: 14px;
-  }
-
-  .detail-photo {
-    min-height: 280px;
-  }
-
-  .contact-section {
-    padding: 20px;
-  }
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  footer {
-    flex-direction: column;
-    gap: 10px;
-  }
+@media (max-width: 550px) {
+  .animal-grid { grid-template-columns: 1fr; }
+  .steps, .help-options, .contact-grid { grid-template-columns: 1fr; }
+  .hero-overlay { padding: 35px 22px; }
+  .hero h1 { font-size: 36px; }
 }
