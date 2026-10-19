@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail zvířete | HERVAS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <header class="header">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">HERVAS</div>
+      <div><div class="brand-sub">ADOPCE A VIRTUÁLNÍ PÉČE O ZVÍŘATA</div></div>
+    </a>
+    <div class="top-links" id="topAuthLinks"></div>
+    <nav class="nav">
+      <a href="index.html">ÚVOD</a>
+      <a href="katalog.html" class="selected">KATALOG ZVÍŘAT</a>
+      <a href="adopce.html">JAK ADOPTOVAT</a>
+      <a href="pomoc.html">CHCI POMOCI</a>
+      <a href="profil.html" id="navProfilLink" class="hidden">MŮJ PROFIL</a>
+      <a href="auth.html" id="navAuthLink">PŘIHLÁŠENÍ / REGISTRACE</a>
+    </nav>
+  </header>
+
+  <main class="page-section">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+      <a href="katalog.html" class="back-button">← ZPĚT NA KATALOG</a>
+      <div id="detailStaffActions" class="hidden" style="display: flex; gap: 8px;">
+        <button id="btnToggleStatusDetail" onclick="toggleAnimalStatusFromDetail()" style="background: #444; color: white; border: 0; padding: 10px 14px; font-weight: bold; cursor: pointer;"></button>
+        <button class="logout-btn" onclick="deleteAnimalFromDetail()">🗑️ SMAZAT ZVÍŘE</button>
+      </div>
+    </div>
+
+    <article class="animal-detail">
+      <div class="detail-photo" id="detailPhoto"></div>
+      <div class="detail-content">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span class="eyebrow" id="detailTypeGender"></span>
+          <span id="detailStatusBadge" class="badge"></span>
+        </div>
+        <h1 id="detailName"></h1>
+        <h2>O ZVÍŘETI A JEHO PŘÍBĚH</h2>
+        <p id="detailIntro"></p>
+        <p id="detailText"></p>
+        <h2>PÉČE A POTŘEBY</h2>
+        <p id="detailCare"></p>
+        <div class="location">
+          <h2>UMÍSTĚNÍ</h2>
+          <p id="detailLocation"></p>
+          <div id="adoptionButtonsContainer" style="display: flex; gap: 12px; margin-top: 18px; flex-wrap: wrap;">
+            <button id="btnRealAdoption" onclick="openRealAdoptionModal()">ŽÁDOST O REÁLNOU ADOPCI</button>
+            <button id="btnVirtualAdoption" onclick="openVirtualAdoptionModal()" style="background: #2a7b4c;">VIRTUÁLNÍ ADOPCE</button>
+          </div>
+          <p id="adoptionUnavailableNotice" class="hidden" style="color: #777; font-style: italic; margin-top: 15px;">Toto zvíře momentálně není k dispozici k adopci.</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer"><div class="footer-content"><div><strong>HERVAS</strong></div></div></footer>
+</div>
+
+<!-- MODÁLNÍ OKNA -->
+<div class="modal" id="adoptionModal">
+  <div class="modal-box">
+    <button class="close" onclick="closeAdoptionModal()">×</button>
+    <h2>VIRTUÁLNÍ ADOPCE</h2>
+    <p id="adoptText">Děkujeme, že chcete pomoci.</p>
+    <div class="amounts">
+      <button onclick="chooseAmount(100)">100 Kč</button>
+      <button onclick="chooseAmount(250)">250 Kč</button>
+      <button onclick="chooseAmount(500)">500 Kč</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="realAdoptionModal">
+  <div class="modal-box" style="width: min(520px, 100%);">
+    <button class="close" onclick="closeRealAdoptionModal()">×</button>
+    <h2>ŽÁDOST O REÁLNOU ADOPCI</h2>
+    <p id="realAdoptText"></p>
+    <form onsubmit="submitRealAdoption(event)" style="text-align: left; margin-top: 15px;">
+      <label style="font-size: 13px; font-weight: bold;">Motivační dopis:</label>
+      <textarea id="realAdoptMotivation" rows="5" required style="width: 100%; margin-top: 6px; padding: 10px; border: 1px solid #ccc;" placeholder="Napište nám o vašich podmínkách..."></textarea>
+      <button type="submit" style="width: 100%; margin-top: 12px; background: #555; color: white; padding: 12px; border: 0; font-weight: bold; cursor: pointer;">ODESLAT ŽÁDOST</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
