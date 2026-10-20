@@ -1,16 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Shelter_Hervas.Domain.Entities;
 
-//TODO: Db Species
-//•	Species_ID: int (PK)
-//•	Species: string
-//•	Breed_ID: int (FK)
-
-
+[Table(nameof(Species))]
 public class Species : Entity<int>
 {
-    public string? Type { get; set; }
-    [ForeignKey(nameof(Breed))] public required Breed BreedId { get; set; }
+    [MaxLength(100)]
+    public required string SpeciesName { get; set; }
     
+    public ICollection<Animal> Animals { get; set; } = new List<Animal>();
+    public ICollection<Breed> Breeds { get; set; } = new List<Breed>();
+
 }

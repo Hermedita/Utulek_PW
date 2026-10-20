@@ -1,14 +1,15 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Shelter_Hervas.Domain.Entities;
-
-//TODO: Donation
-//•	User_ID: int (FK)
-//•	Payment_ID: int (FK)
+//muze byt mesicni + virtalni adopce
 
 [Table(nameof(Donation))]
 public class Donation : Entity<int>
 {
-    [ForeignKey(nameof(User))] public User UserId { get;}
-    [ForeignKey(nameof(Payment))] public Payment PaymentId { get;}
+    public int UserId { get; set; }
+    public User User { get; set; } = null!;
+
+    public int PaymentId { get; set; }
+    public Payment Payment { get; set; } = null!;
+    
 }

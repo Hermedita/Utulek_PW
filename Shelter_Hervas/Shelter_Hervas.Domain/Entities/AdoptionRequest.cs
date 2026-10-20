@@ -3,17 +3,16 @@ using Shelter_Hervas.Domain.Entities.enums;
 
 namespace Shelter_Hervas.Domain.Entities;
 
-//TODO: Db AdoptionRequest
-//•	AdoptRequest_ID: int (PK)
-//•	Status: RequestStatus
-//•	Animal_ID: int (FK)
-//•	User_ID: int (FK)
-
-[Table(nameof(User))]
+[Table(nameof(AdoptionRequest))]
 public class AdoptionRequest : Entity<int>
 {
     public required RequestStatus RequestStatus { get; set; }
-    [ForeignKey(nameof(Animal))] public required Animal AnimalId { get; set; }
-    [ForeignKey(nameof(User))] public required User UserId { get; set; }
     
+    public int AnimalId { get; set; }
+    public Animal Animal { get; set; } = null!;
+    
+    public int UserId { get; set; }
+    public User User { get; set; } = null!;
+    
+    public Adoption? Adoption { get; set; }
 }

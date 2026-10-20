@@ -1,22 +1,25 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Shelter_Hervas.Domain.Entities.enums;
 
 namespace Shelter_Hervas.Domain.Entities;
-
-//TODO: Db Users
-//•	User_ID: int (PK)
-//•	LoginName: string (U)
-//•	Email: string (U)
-//•	PasswordHash: string
-//•	PasswordSalt: string
-//•	Role_ID: int (FK)
 
 [Table(nameof(User))]
 public class User : Entity<int>
 {
-    public required string? LoginName { get; set; }
-    public required string? Email { get; set; }
-    public string? PasswordHash { get; set; }
-    public string? PasswordSalt { get; set; }
-    [ForeignKey(nameof(Role))] public Role RoleId { get; set; }
+    public required RoleEnum Role { get; set; }
     
+    [MaxLength(50)]
+    public required string LoginName { get; set; }
+
+    [MaxLength(254)]
+    public required string Email { get; set; }
+
+    public required string PasswordHash { get; set; }
+    public required string PasswordSalt { get; set; }
+    
+    
+    public ICollection<AdoptionRequest> AdoptionRequests { get; set; } = new List<AdoptionRequest>();
+    public ICollection<Donation> Donations { get; set; } = new List<Donation>();
+
 }

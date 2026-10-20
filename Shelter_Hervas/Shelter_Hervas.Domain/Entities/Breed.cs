@@ -3,12 +3,15 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Shelter_Hervas.Domain.Entities;
 
-//TODO: Db Breeds
-//•	Breed_ID: int (PK)
-//•	Breed: string
-
 [Table(nameof(Breed))]
 public class Breed : Entity<int>
 {
-    public required string Type { get; set; }
+    [MaxLength(100)]
+    public required string BreedName { get; set; }
+    
+    public int SpeciesId { get; set; }
+    public Species Species { get; set; } = null!;
+    
+    public ICollection<Animal> Animals { get; set; } = new List<Animal>();
+
 }

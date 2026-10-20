@@ -2,8 +2,8 @@
 
 public enum RequestStatus
 {
-    Processing,
-    Accepted,
-    Rejected,
-    Cancelled
+    Processing = 1,
+    Accepted = 2,
+    Rejected = 3,
+    Cancelled = 4
 }

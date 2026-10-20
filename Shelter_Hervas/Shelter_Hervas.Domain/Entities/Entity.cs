@@ -1,9 +1,9 @@
-﻿using Shelter_Hervas.Domain.Entities.Interfaces;
+﻿using Shelter_Hervas.Domain.Repository;
 
 namespace Shelter_Hervas.Domain.Entities
 {
-    public class Entity<TKey> : IEntity<TKey> where TKey : notnull
+    public abstract class Entity<TKey> : IEntity<TKey> where TKey : notnull
     {
-        public TKey Id { get; set; }
+        public TKey Id { get; set; } = default!;
     }
 }

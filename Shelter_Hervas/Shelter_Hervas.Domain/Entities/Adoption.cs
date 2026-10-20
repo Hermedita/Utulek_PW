@@ -2,14 +2,9 @@
 
 namespace Shelter_Hervas.Domain.Entities;
 
-//TODO: Db Adoptions
-//•	Adoption_ID: int (PK)
-//•	AdoptRequest_ID: int (FK)
-//•	Payment_ID: int (FK)
-
 [Table(nameof(Adoption))]
 public class Adoption : Entity<int>
 {
-    [ForeignKey(nameof(AdoptionRequest))] public required AdoptionRequest AdoptionRequestId { get; set; }
-    [ForeignKey(nameof(Payment))] public required Payment PaymentId { get; set; }
+    public int AdoptionRequestId {get; set;}
+    public AdoptionRequest AdoptionRequest { get; set; } = null!;
 }
