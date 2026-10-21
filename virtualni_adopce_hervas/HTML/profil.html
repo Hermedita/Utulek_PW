@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Můj Profil | HERVAS</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+<div class="page">
+  <header class="header">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">HERVAS</div>
+      <div><div class="brand-sub">ADOPCE A VIRTUÁLNÍ PÉČE O ZVÍŘATA</div></div>
+    </a>
+    <div class="top-links" id="topAuthLinks"></div>
+    <nav class="nav">
+      <a href="index.html">ÚVOD</a>
+      <a href="katalog.html">KATALOG ZVÍŘAT</a>
+      <a href="adopce.html">JAK ADOPTOVAT</a>
+      <a href="pomoc.html">CHCI POMOCI</a>
+      <a href="profil.html" class="selected" id="navProfilLink">MŮJ PROFIL</a>
+      <a href="#" onclick="handleLogout()">ODHLÁSIT</a>
+    </nav>
+  </header>
+
+  <main class="page-section profile-layout">
+    <aside class="profile-sidebar">
+      <div class="user-info-card">
+        <div class="eyebrow">PŘÍHLÁŠENÝ UŽIVATEL</div>
+        <h2 id="profileName" style="margin: 6px 0;">Vítejte</h2>
+        <p id="profileEmail" style="color: #666; font-size: 14px; margin: 0 0 10px 0;"></p>
+        <span class="role-badge" id="profileRoleBadge">ROLE</span>
+      </div>
+      <div class="profile-menu">
+        <button id="tabBtnTransactions" onclick="switchProfileTab('transactions')" class="profile-menu-item active">💳 Moje transakce a žádosti</button>
+        <button id="tabBtnSettings" onclick="switchProfileTab('settings')" class="profile-menu-item">⚙️ Nastavení účtu</button>
+        <button id="tabBtnManager" onclick="switchProfileTab('manager')" class="profile-menu-item hidden" style="color: #1b4d3e;">📋 Manažerský panel</button>
+        <button id="tabBtnMessages" onclick="switchProfileTab('messages')" class="profile-menu-item hidden" style="color: #2a7b4c;">💬 Zprávy z formuláře</button>
+        <button id="tabBtnAdminRoles" onclick="switchProfileTab('adminRoles')" class="profile-menu-item hidden" style="color: #b83232;">🔑 Administrace</button>
+        <button onclick="handleLogout()" class="profile-menu-item logout-item">📕 Odhlásit se</button>
+      </div>
+    </aside>
+
+    <section class="profile-content">
+      <div id="tabContentTransactions" class="tab-pane profile-section">
+        <h2>Moje transakce a žádosti o adopci</h2>
+        <p style="color: #666; font-size: 14px; margin-bottom: 16px;">Přehled všech vašich proběhlých virtuálních příspěvků a podaných žádostí.</p>
+        
+        <div style="display: flex; gap: 12px; margin-bottom: 16px;">
+          <div class="filter-group">
+            <label>Typ záznamu</label>
+            <select id="filterTxType" onchange="renderUserTransactions()">
+              <option value="all">Všechny záznamy</option>
+              <option value="payment">Příspěvky / Platby</option>
+              <option value="adoption">Adopce</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>Řazení</label>
+            <select id="filterTxSort" onchange="renderUserTransactions()">
+              <option value="oldest">Od nejstarších</option>
+              <option value="newest">Od nejnovějších</option>
+            </select>
+          </div>
+        </div>
+        <div class="transactions-list" id="userTransactionsList"></div>
+      </div>
+
+      <div id="tabContentSettings" class="tab-pane profile-section hidden">
+        <h2>Nastavení profilu a zabezpečení</h2>
+        <form onsubmit="handleUpdateProfile(event)" style="display: flex; flex-direction: column; gap: 12px; max-width: 500px; margin-top: 10px;">
+          <div class="filter-group">
+            <label>Jméno a příjmení:</label>
+            <input type="text" id="editUserName" required style="padding: 10px; border: 1px solid #ccc;">
+          </div>
+          <button type="submit" style="background: #555; color: white; border: 0; padding: 11px 18px; cursor: pointer; font: 700 14px Oswald, sans-serif; width: fit-content;">ULOŽIT ZMĚNY</button>
+        </form>
+        <hr style="margin: 25px 0; border: 0; border-top: 1px solid #ddd;">
+        <div>
+          <h3>Zrušení účtu</h3>
+          <button class="delete-account-btn" onclick="deleteUserAccount()" style="background: #8b0000; color: white; border: 0; padding: 11px 16px; font: 700 13px Oswald, sans-serif; cursor: pointer;">⚠️ TRVALE SMAZAT ÚČET</button>
+        </div>
+      </div>
+
+      <div id="tabContentManager" class="tab-pane hidden">
+        <div class="manager-sub-section">
+          <h2>Manažerský panel</h2>
+          <div style="display: flex; gap: 12px; margin: 15px 0;">
+            <div class="filter-group">
+              <label>Typ</label>
+              <select id="filterManagerType" onchange="renderManagerRequests()">
+                <option value="all">Všechny typy</option>
+                <option value="adoption">Adopce</option>
+                <option value="payment">Příspěvky</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Stav</label>
+              <select id="filterManagerStatus" onchange="renderManagerRequests()">
+                <option value="all">Všechny stavy</option>
+                <option value="Processing">Čekající (Processing)</option>
+                <option value="Accepted">Schválené / Zaplacené</option>
+                <option value="Rejected">Zamítnuté / Stornované</option>
+              </select>
+            </div>
+          </div>
+          <div id="managerRequestsList"></div>
+        </div>
+      </div>
+
+      <div id="tabContentMessages" class="tab-pane hidden">
+        <div class="manager-sub-section">
+          <h2>Přijaté zprávy z kontaktního formuláře</h2>
+          <p style="color: #666; font-size: 14px; margin-bottom: 16px;">Seznam všech zpráv, které odeslali návštěvníci přes web.</p>
+          <div id="adminMessagesList" class="transactions-list"></div>
+        </div>
+      </div>
+
+      <div id="tabContentAdminRoles" class="tab-pane hidden">
+        <div class="manager-sub-section" id="adminLocationSection">
+          <h2>Správa lokalit</h2>
+          <div id="adminLocationsList" style="display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0;"></div>
+          <form onsubmit="handleAddLocation(event)" style="display: flex; gap: 10px; margin-top: 10px;">
+            <input type="text" id="newLocationInput" placeholder="Nová lokalita..." required style="padding: 9px; border: 1px solid #ccc; flex: 1;">
+            <button type="submit" style="background: #2a7b4c; color: white; border: 0; padding: 9px 16px; cursor: pointer; font-weight: bold;">Přidat lokalitu</button>
+          </form>
+        </div>
+
+        <div class="manager-sub-section">
+          <h2>Správa uživatelských rolí</h2>
+          <div id="adminUsersList" class="transactions-list" style="margin-top: 10px;"></div>
+        </div>
+
+        <div class="manager-sub-section">
+          <h2>Přidat nové zvíře do katalogu</h2>
+          <form onsubmit="handleAddAnimal(event)" class="add-animal-form" style="margin-top: 12px;">
+            <div class="filter-group">
+              <label>Jméno zvířete</label>
+              <input type="text" id="addName" required>
+            </div>
+            <div class="filter-group">
+              <label>Druh</label>
+              <select id="addType">
+                <option value="Kočka">Kočka</option>
+                <option value="Pes">Pes</option>
+                <option value="Jine">Jiné</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Pohlaví</label>
+              <select id="addGender">
+                <option value="Samec">Samec</option>
+                <option value="Samice">Samice</option>
+                <option value="Jiné">Jiné</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Věk (roky)</label>
+              <input type="number" id="addAge" min="0" required>
+            </div>
+            <div class="filter-group">
+              <label>Status</label>
+              <select id="addStatus">
+                <option value="Active">Aktivní</option>
+                <option value="Inactive">Neaktivní</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>Adoptovatelnost</label>
+              <select id="addAdoptable">
+                <option value="true">Reálná i virtuální</option>
+                <option value="false">Pouze virtuální</option>
+              </select>
+            </div>
+            <div class="filter-group" style="grid-column: span 2;">
+              <label>Obrázek (Soubor z PNG/)</label>
+              <input type="file" id="addImgFile" accept="image/*">
+            </div>
+            <div class="filter-group" style="grid-column: span 2;">
+              <label>Krátký úvod</label>
+              <input type="text" id="addIntro" required>
+            </div>
+            <textarea id="addText" placeholder="Detailní příběh zvířete..." required></textarea>
+            <div class="filter-group" style="grid-column: span 2;">
+              <label>Potřebná péče</label>
+              <input type="text" id="addCare" required>
+            </div>
+            <div class="filter-group" style="grid-column: span 2;">
+              <label>Lokalita</label>
+              <select id="addLocationSelect"></select>
+            </div>
+            <button type="submit">Přidat zvíře do katalogu</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <strong>HERVAS ADOPČNÍ SYSTÉM</strong>
+        <p>Pomoc zvířatům v nouzi – reálné i virtuální adopce.</p>
+      </div>
+      <div class="footer-right">
+        <strong>© 2026 HERVAS · Všechna práva vyhrazena</strong>
+        <div class="footer-sub">U Zvířat 15, Praha 10 | +420 777 123 456</div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="../JAVA/script.js"></script>
+</body>
+</html>
