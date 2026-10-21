@@ -6,51 +6,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0e7303f-f1e0-4992-b749-835fe5a7bdcb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/AnimalListing.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/IPasswordHasher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/GenderEnum.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/ListingStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/RoleEnum.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/Seeding/AdoptionInit.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/Seeding/AdoptionRequestInit.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/Seeding/AnimalInit.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/Seeding/AnimalListingInit.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/Seeding/BreedInit.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/Seeding/DonationsInit.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/Seeding/LocationInit.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/Seeding/PaymentInit.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/Seeding/SpeciesInit.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/Seeding/UserInit.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Areas/Manager/Controllers/NewFile1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Areas/Manager/Views/_ViewImports.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Areas/Manager/Views/_ViewStart.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Areas/Security/Controllers/NewFile1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Areas/Security/Views/_ViewImports.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Areas/Security/Views/_ViewStart.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Areas/User/Controllers/NewFile1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Areas/User/Views/_ViewImports.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Areas/User/Views/_ViewStart.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Application/Records/NewFile1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Managers/IAccountManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IAdoptionRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IAdoptionRequestRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IAnimalListingRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IAnimalRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IBreedRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IDonationRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/ILocationRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IPaymentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/ISpeciesRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IUserRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/Configuration/NewFile1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Identity/NewFile1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Managers/NewFile1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shelter_Hervas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shelter_Hervas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/Debug/net10.0/Shelter_Hervas.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/Debug/net10.0/Shelter_Hervas.Application.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/Debug/net10.0/Shelter_Hervas.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/Debug/net10.0/Shelter_Hervas.Application.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Adoption.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Adoption.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/AdoptionRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/AdoptionRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Animal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Breed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Breed.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Donation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Donation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Entity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Entity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/AnimalListing.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Location.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Location.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Payment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Payment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Role.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Species.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Species.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/TypeOfCare.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/AnimalStatus.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/PaymentStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/PaymentStatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/RequestStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/RequestStatus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Repository/IAnimalRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Repository/IRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Repository/IEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Repository/IEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/Debug/net10.0/Shelter_Hervas.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/Debug/net10.0/Shelter_Hervas.Domain.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/Debug/net10.0/Shelter_Hervas.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/Debug/net10.0/Shelter_Hervas.Domain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/Seeding/NewFile1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/ShelterDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/ShelterDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/IPasswordHasher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Managers/IPasswordHasher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Repository/IEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/IEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/Repository/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Web.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +55,18 @@
     <setting file="file://$PROJECT_DIR$/Areas/Admin/Controllers/AnimalController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/AdoptionRequest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Donation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/AnimalListing.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/IPasswordHasher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Managers/IAccountManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IAdoptionRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IAdoptionRequestRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IAnimalListingRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IAnimalRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IBreedRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IDonationRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/ILocationRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IPaymentRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/ISpeciesRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Interfaces/Repository/IUserRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Location.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/Species.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/GenderEnum.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,8 +74,6 @@
     <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/PaymentStatus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/RequestStatus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Entities/enums/RoleEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Repository/IEntity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Domain/Repository/IRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/Seeding/AnimalListingInit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/Seeding/DonationsInit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/Seeding/LocationInit.cs" root0="FORCE_HIGHLIGHTING" />
@@ -167,7 +159,7 @@
       <workItem from="1791212812512" duration="765000" />
       <workItem from="1791277513336" duration="5379000" />
       <workItem from="1792056498965" duration="7182000" />
-      <workItem from="1792440854586" duration="28266000" />
+      <workItem from="1792440854586" duration="30146000" />
     </task>
     <servers />
   </component>
