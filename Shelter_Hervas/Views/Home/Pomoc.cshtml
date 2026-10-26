@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Chci pomoci";
+}
+
+<div class="section-heading">
+    <span class="eyebrow">PODPORA HERVAS</span>
+    <h1>Chci pomoci obecným příspěvkem</h1>
+    <p>Vaše finanční podpora pomáhá hradit provoz celého záchranného azylu.</p>
+</div>
+
+<div class="help-options" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+    <div class="help-card">
+        <h2>100 Kč</h2><p>příspěvek</p>
+        <button onclick="generalAdoption(100)">POMOCI 100 Kč</button>
+    </div>
+    <div class="help-card">
+        <h2>250 Kč</h2><p>příspěvek</p>
+        <button onclick="generalAdoption(250)">POMOCI 250 Kč</button>
+    </div>
+    <div class="help-card">
+        <h2>500 Kč</h2><p>příspěvek</p>
+        <button onclick="generalAdoption(500)">POMOCI 500 Kč</button>
+    </div>
+    <div class="help-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+            <h2>Vlastní</h2><p>příspěvek v Kč</p>
+            <input type="number" id="customGeneralAmountInput" placeholder="Zadejte částku" min="1" style="width: 100%; padding: 8px; border: 1px solid #ccc; font-weight: bold; text-align: center; margin-bottom: 12px;">
+        </div>
+        <button onclick="submitCustomGeneralAdoption()" style="background: #555;">PŘISPĚT ČÁSTKU</button>
+    </div>
+</div>

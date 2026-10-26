@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Katalog zvířat";
+}
+
+<div class="filter-box">
+    <div class="filter-group">
+        <label>Druh zvířete</label>
+        <select id="filterType" onchange="applyFilters()">
+            <option value="all">Všechny druhy</option>
+            <option value="Kočka">Kočky</option>
+            <option value="Pes">Psi</option>
+            <option value="Jine">Jiné</option>
+        </select>
+    </div>
+    <div class="filter-group">
+        <label>Pohlaví</label>
+        <select id="filterGender" onchange="applyFilters()">
+            <option value="all">Všechna pohlaví</option>
+            <option value="Samec">Samec</option>
+            <option value="Samice">Samice</option>
+            <option value="Jiné">Jiné</option>
+        </select>
+    </div>
+    <button class="reset-btn" onclick="resetFilters()">Reset filtrů</button>
+</div>
+
+<div class="animal-grid" id="animalGrid"></div>
+<div class="pagination" id="paginationControls"></div>

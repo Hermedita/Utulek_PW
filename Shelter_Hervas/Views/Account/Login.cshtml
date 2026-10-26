@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Přihlášení / Registrace";
+}
+
+<div class="auth-container" style="margin-top: 30px;">
+    <div class="auth-box">
+        <h2>Přihlášení</h2>
+        <form onsubmit="handleLogin(event)">
+            <input type="email" id="loginEmail" placeholder="E-mail" required>
+            <input type="password" placeholder="Heslo" required>
+            <button type="submit">Přihlásit se</button>
+        </form>
+
+        <div style="margin-top: 20px; padding: 12px; background: #f0f0f0; border-left: 4px solid #555; font-size: 13px;">
+            <strong>Testovací účty:</strong><br>
+            • Admin: <code>admin@hervas.cz</code><br>
+            • Manažer: <code>manager@hervas.cz</code><br>
+            • Uživatel: <code>jan@example.com</code><br>
+            <em>(Heslo může být libovolné)</em>
+        </div>
+    </div>
+
+    <div class="auth-box">
+        <h2>Registrace</h2>
+        <form onsubmit="handleRegister(event)">
+            <input type="text" id="regName" placeholder="Jméno a příjmení" required>
+            <input type="email" id="regEmail" placeholder="Váš e-mail" required>
+            <input type="password" id="regPassword" placeholder="Heslo" required>
+            <input type="password" id="regPasswordConfirm" placeholder="Potvrzení hesla" required>
+            <button type="submit">Registrovat se</button>
+        </form>
+    </div>
+</div>

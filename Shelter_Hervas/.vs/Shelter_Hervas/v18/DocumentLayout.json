@@ -1,0 +1,167 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|c:\\users\\vasta\\desktop\\utulek_pw\\shelter_hervas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|c:\\users\\vasta\\desktop\\utulek_pw\\shelter_hervas\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|c:\\users\\vasta\\desktop\\utulek_pw\\shelter_hervas\\shelter_hervas.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|solutionrelative:shelter_hervas.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|c:\\users\\vasta\\desktop\\utulek_pw\\shelter_hervas\\areas\\admin\\controllers\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|solutionrelative:areas\\admin\\controllers\\animalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|c:\\users\\vasta\\desktop\\utulek_pw\\shelter_hervas\\areas\\admin\\views\\animal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|solutionrelative:areas\\admin\\views\\animal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|c:\\users\\vasta\\desktop\\utulek_pw\\shelter_hervas\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|solutionrelative:areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|c:\\users\\vasta\\desktop\\utulek_pw\\shelter_hervas\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|solutionrelative:areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|c:\\users\\vasta\\desktop\\utulek_pw\\shelter_hervas\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|c:\\users\\vasta\\desktop\\utulek_pw\\shelter_hervas\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D1E0FE87-8337-4451-895C-DD37C9C7D61A}|Shelter_Hervas.Web.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T13:34:46.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-26T13:28:55.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-26T13:28:49.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwCwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-26T13:26:50.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-26T13:15:51.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "index.cshtml",
+              "DocumentMoniker": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Areas\\Admin\\Views\\Animal\\index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Animal\\index.cshtml",
+              "ToolTip": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Areas\\Admin\\Views\\Animal\\index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Animal\\index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-26T13:29:41.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AnimalController.cs",
+              "DocumentMoniker": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Areas\\Admin\\Controllers\\AnimalController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\AnimalController.cs",
+              "ToolTip": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Areas\\Admin\\Controllers\\AnimalController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\AnimalController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T13:32:05.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Shelter_Hervas.Web",
+              "DocumentMoniker": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Web.csproj",
+              "RelativeDocumentMoniker": "Shelter_Hervas.Web.csproj",
+              "ToolTip": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Web.csproj",
+              "RelativeToolTip": "Shelter_Hervas.Web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-26T13:59:12.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-10-26T13:06:27.052Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net10.0": {
       "Humanizer.Core/2.14.1": {
@@ -2203,43 +2203,46 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bagri\\.nuget\\packages\\": {},
+    "C:\\Users\\vasta\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bagri\\Documents\\GitHub\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Web.csproj",
+      "projectUniqueName": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Web.csproj",
       "projectName": "Shelter_Hervas.Web",
-      "projectPath": "C:\\Users\\bagri\\Documents\\GitHub\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Web.csproj",
-      "packagesPath": "C:\\Users\\bagri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bagri\\Documents\\GitHub\\Utulek_PW\\Shelter_Hervas\\obj\\",
+      "projectPath": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Web.csproj",
+      "packagesPath": "C:\\Users\\vasta\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\bagri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config"
+        "C:\\Users\\vasta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\bagri\\Documents\\GitHub\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Application\\Shelter_Hervas.Application.csproj": {
-              "projectPath": "C:\\Users\\bagri\\Documents\\GitHub\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Application\\Shelter_Hervas.Application.csproj"
+            "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Application\\Shelter_Hervas.Application.csproj": {
+              "projectPath": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Application\\Shelter_Hervas.Application.csproj"
             },
-            "C:\\Users\\bagri\\Documents\\GitHub\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Domain\\Shelter_Hervas.Domain.csproj": {
-              "projectPath": "C:\\Users\\bagri\\Documents\\GitHub\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Domain\\Shelter_Hervas.Domain.csproj"
+            "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Domain\\Shelter_Hervas.Domain.csproj": {
+              "projectPath": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Domain\\Shelter_Hervas.Domain.csproj"
             },
-            "C:\\Users\\bagri\\Documents\\GitHub\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Infrastructure\\Shelter_Hervas.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\bagri\\Documents\\GitHub\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Infrastructure\\Shelter_Hervas.Infrastructure.csproj"
+            "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Infrastructure\\Shelter_Hervas.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Infrastructure\\Shelter_Hervas.Infrastructure.csproj"
             }
           }
         }
@@ -2254,10 +2257,11 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net10.0": {
+        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": {
@@ -2286,7 +2290,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
