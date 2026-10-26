@@ -9,10 +9,8 @@ public class User : Entity<int>
 {
     public required RoleEnum Role { get; set; }
     
-    [MaxLength(50)]
     public required string LoginName { get; set; }
 
-    [MaxLength(254)]
     public required string Email { get; set; }
 
     public required string PasswordHash { get; set; }

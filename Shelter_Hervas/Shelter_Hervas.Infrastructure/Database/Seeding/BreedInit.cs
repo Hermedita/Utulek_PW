@@ -6,9 +6,6 @@ namespace Shelter_Hervas.Infrastructure.Database.Seeding
     {
         public IList<Breed> GetBreed1()
         {
-            //•	Breed_ID: int (PK)
-            //•	BreedName: string
-
             IList<Breed> breeds = new List<Breed>();
 
             breeds.Add(new Breed
@@ -21,5 +18,7 @@ namespace Shelter_Hervas.Infrastructure.Database.Seeding
             return breeds;
         }
     }
-
 }
+// Id: int (PK)
+// BreedName: string (M) (100)
+// SpeciesId: int (FK) (M)

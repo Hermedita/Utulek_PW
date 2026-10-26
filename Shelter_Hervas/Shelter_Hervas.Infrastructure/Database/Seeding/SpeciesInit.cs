@@ -6,10 +6,6 @@ namespace Shelter_Hervas.Infrastructure.Database.Seeding
     {
         public IList<Species> Getspecies1()
         {
-
-            //•	Species_ID: int (PK)
-            //•	Type: string
-
             IList<Species> species = new List<Species>();
 
             species.Add(new Species
@@ -21,5 +17,6 @@ namespace Shelter_Hervas.Infrastructure.Database.Seeding
             return species;
         }
     }
-
 }
+// Id: int (PK)
+// SpeciesName: string (M)

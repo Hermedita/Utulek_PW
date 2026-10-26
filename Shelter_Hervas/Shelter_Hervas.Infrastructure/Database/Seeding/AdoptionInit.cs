@@ -6,8 +6,6 @@ namespace Shelter_Hervas.Infrastructure.Database.Seeding
     {
         public IList<Adoption> GetAdoption1()
         {
-            //•	Adoption_ID: int (PK)
-            //•	AdoptRequest_ID: int (FK)
             IList<Adoption> adoptions = new List<Adoption>();
 
             adoptions.Add(new Adoption
@@ -15,9 +13,10 @@ namespace Shelter_Hervas.Infrastructure.Database.Seeding
                 Id = 1,
                 AdoptionRequestId = 1
             });
-            
+
             return adoptions;
         }
     }
-
 }
+            // Id: int (PK)
+            // AdoptionRequestId: int (FK) (M)

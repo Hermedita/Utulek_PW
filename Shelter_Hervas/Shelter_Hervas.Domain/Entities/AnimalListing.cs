@@ -9,10 +9,8 @@ public class AnimalListing : Entity<int>
 {
     public required ListingStatus ListingStatus {get; set;}
     
-    [MaxLength(500)]
     public string? Description {get; set;}
     
-    [MaxLength(200)]
     public string? Image {get;set;}
 
     public int AnimalId { get; set; }

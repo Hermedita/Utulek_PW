@@ -12,7 +12,7 @@ Poslední týden v semestru (14. týden) -> řádný termín obhajoby bez prezen
 ---
 ## Obecné podmínky pro projekt:
 
-- [ ] Návrh webové aplikace projektu (funkční požadavky, návrh entit/diagramu tříd/databáze). Můžete vytvořit dokument ve Wordu (nemusíte dělat diagramy v EA)
+- [x] Návrh webové aplikace projektu (funkční požadavky, návrh entit/diagramu tříd/databáze). Můžete vytvořit dokument ve Wordu (nemusíte dělat diagramy v EA)
 
 - [ ] Webová aplikace typu ASP.NET Core MVC (verze 10.x nebo vyšší)
   * Aplikace může být vytvořena kompletně v této technologii, nebo lze využít jen pro back-end, např. ve formě Web API.
@@ -25,11 +25,11 @@ Poslední týden v semestru (14. týden) -> řádný termín obhajoby bez prezen
   * V Presentation vrstvě se nesmí objevit přímé použití Infrastructure vrstvy (kromě konfigurace).
   * V Controllerech nesmí být kód logicky spadající do nižších vrstev (např. žádný DbContext).
 
-- [ ] Vytvoření databáze technikou Code-First (s migracemi) a její napojení a použití pomocí EntityFrameworkCore (nebo obdobného frameworku).
+- [x] Vytvoření databáze technikou Code-First (s migracemi) a její napojení a použití pomocí EntityFrameworkCore (nebo obdobného frameworku).
 
 - [ ] Vhodná implementace Repository pattern (ve správné vrstvě, se správnými interfaces).
 
-- [ ] Projekt musí obsahovat několik entit, popř. ViewModelů/DTO (minimálně 5 - nepočítají se entity z Entity Framework Core a ani z Identity, ani ErrorViewModel). Musí být definováno aspoň jedno propojení entit skrz cizí klíč.
+- [x] Projekt musí obsahovat několik entit, popř. ViewModelů/DTO (minimálně 5 - nepočítají se entity z Entity Framework Core a ani z Identity, ani ErrorViewModel). Musí být definováno aspoň jedno propojení entit skrz cizí klíč.
 
 - [ ] Vytvoření Area "Admin", ve které budou uloženy Controllery a View pro správu všech položek v databázi adminem (admin bude moct spravovat i data uživatele, ale nebude jim smět měnit hash hesla).
   * Ve správě položek musí být implementována i editace položek.

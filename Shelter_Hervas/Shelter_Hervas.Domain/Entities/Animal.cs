@@ -7,9 +7,9 @@ namespace Shelter_Hervas.Domain.Entities
     [Table(nameof(Animal))]
     public class Animal : Entity<int>
     {
-        [MaxLength(100)]
         public string? Name { get; set; }
         
+        //TODO: Validate age input range
         [Range(0,150)]
         public int? Age { get; set; }
         

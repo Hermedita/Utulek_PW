@@ -7,7 +7,6 @@ namespace Shelter_Hervas.Domain.Entities;
 [Table(nameof(Payment))]
 public class Payment : Entity<int>
 {
-    [MaxLength(30)]
     public required string PayMethod { get; set; }
     
     public required DateTime PayDate { get; set; }

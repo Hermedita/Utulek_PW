@@ -7,13 +7,6 @@ namespace Shelter_Hervas.Infrastructure.Database.Seeding
     {
         public IList<Animal> GetAnimal1()
         {
-            //•	Animal_ID: int (PK)
-            //•	Name: string
-            //•	Age: double
-            //•	Gender: string
-            //•	Species_ID: int (FK)
-            //• Breed_ID: int (FK)
-            //•	Adoptable: bool
             IList<Animal> animals = new List<Animal>();
 
             animals.Add(new Animal
@@ -30,5 +23,11 @@ namespace Shelter_Hervas.Infrastructure.Database.Seeding
             return animals;
         }
     }
-
 }
+// Id: int (PK)
+// Name: string
+// Age: int
+// Gender: enum (GenderEnum)
+// SpeciesId: int (FK) (M)
+// BreedId: int (FK)
+// Adoptable: bool (M)

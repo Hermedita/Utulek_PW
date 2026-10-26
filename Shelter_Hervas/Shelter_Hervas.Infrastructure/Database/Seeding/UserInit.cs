@@ -5,12 +5,6 @@ namespace Shelter_Hervas.Infrastructure.Database.Seeding;
 
 internal class UserInit
 {
-    //•	User_ID: int (PK)
-    //•	LoginName: string (U)
-    //•	Email: string (U)
-    //•	PasswordHash: string
-    //•	PasswordSalt: string
-    //•	Role_ID: int (FK)
     public IList<User> GetUser_MainThree1()
     {
         IList<User> users = new List<User>();
@@ -47,5 +41,10 @@ internal class UserInit
         
         return users;
     }
-    
 }
+// Id: int (PK)
+// LoginName: string (U) (M)
+// Email: string (U) (M)
+// PasswordHash: string (M)
+// PasswordSalt: string (M)
+// Role: enum (RoleEnum) (M)

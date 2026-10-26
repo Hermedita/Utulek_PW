@@ -6,7 +6,6 @@ namespace Shelter_Hervas.Domain.Entities;
 [Table(nameof(Breed))]
 public class Breed : Entity<int>
 {
-    [MaxLength(100)]
     public required string BreedName { get; set; }
     
     public int SpeciesId { get; set; }

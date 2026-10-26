@@ -13,10 +13,13 @@ internal class DonationsInit
         donations.Add(new Donation
         {
             Id = 1,
-            PaymentId = 1,
-            UserId = 1
+            UserId = 1,
+            PaymentId = 1
         });
         
         return donations;
     }
 }
+// Id: int (PK)
+// UserId: int (FK) (M)
+// PaymentId: int (FK) (M)

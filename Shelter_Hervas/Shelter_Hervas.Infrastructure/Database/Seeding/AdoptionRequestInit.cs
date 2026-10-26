@@ -7,10 +7,6 @@ namespace Shelter_Hervas.Infrastructure.Database.Seeding
     {
         public IList<AdoptionRequest> GetAdoptionRequest1()
         {
-            //•	AdoptRequest_ID: int (PK)
-            //•	Status: RequestStatus
-            //•	Animal_ID: int (FK)
-            //•	User_ID: int (FK)
             IList<AdoptionRequest> adoptionRequests = new List<AdoptionRequest>();
 
             adoptionRequests.Add(new AdoptionRequest
@@ -25,3 +21,7 @@ namespace Shelter_Hervas.Infrastructure.Database.Seeding
         }
     }
 }
+// Id: int (PK)
+// RequestStatus: enum (M)
+// AnimalId: int (FK) (M)
+// UserId: int (FK) (M)

@@ -19,7 +19,7 @@ internal class AnimalListingInit
             Id = 1,
             ListingStatus = ListingStatus.Active,
             Description = "Velká kočka",
-            Image = "/img/kocka/kocka_2.png",
+            Image = "Shelter_Hervas/wwwroot/img/kocka/01.jpg",
             AnimalId = 1,
             LocationId = 2
         });
@@ -27,3 +27,10 @@ internal class AnimalListingInit
 
     }
 }
+
+// Id: int (PK)
+// ListingStatus: enum (M)
+// Description: string (500)
+// Image: string (200)
+// AnimalId: int (FK) (M)
+// LocationId: int (FK)

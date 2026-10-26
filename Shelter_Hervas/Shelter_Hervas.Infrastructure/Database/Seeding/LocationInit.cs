@@ -4,8 +4,6 @@ namespace Shelter_Hervas.Infrastructure.Database.Seeding;
 
 internal class LocationInit
 {
-    //•	Location_ID: int (PK)
-    //•	Place: string
     public IList<Location> GetLocation1()
     {
         IList<Location> locations = new List<Location>();
@@ -16,7 +14,7 @@ internal class LocationInit
             Place = "Záchranný areál HERVAS"
         });
         return locations;
-        
     }
-    
 }
+// Id: int (PK)
+// Place: string (M)
