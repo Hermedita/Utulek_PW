@@ -38,7 +38,7 @@ public class ShelterDbContext : DbContext
         builder.EnumConventions();
     }
  
-    public ShelterDbContext(DbContextOptions options) : base(options)
+    public ShelterDbContext(DbContextOptions<ShelterDbContext> options) : base(options)
     {
     }
 
