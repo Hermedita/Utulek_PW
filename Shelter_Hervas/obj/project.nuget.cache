@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "9EP6ZZXSuvY=",
+=======
+  "dgSpecHash": "/c2vLHb8Tw4=",
+>>>>>>> 84417ba22bf8ba7549e3d194b17d2925dbc58a84
   "success": true,
   "projectFilePath": "C:\\Users\\vasta\\Desktop\\Utulek_PW\\Shelter_Hervas\\Shelter_Hervas.Web.csproj",
   "expectedPackageFiles": [

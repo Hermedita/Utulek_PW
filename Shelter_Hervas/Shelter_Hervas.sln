@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shelter_Hervas.Web", "Shelter_Hervas.Web.csproj", "{D1E0FE87-8337-4451-895C-DD37C9C7D61A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shelter_Hervas.Web", "Shelter_Hervas.Web\Shelter_Hervas.Web.csproj", "{D1E0FE87-8337-4451-895C-DD37C9C7D61A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shelter_Hervas.Application", "Shelter_Hervas.Application\Shelter_Hervas.Application.csproj", "{45B81668-2E16-4CE1-BA8A-5995082CDA89}"
 EndProject
