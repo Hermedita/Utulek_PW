@@ -7,119 +7,17 @@
   <component name="ChangeListManager">
     <list default="true" id="407ba1ed-cac1-4f49-988c-93caca55a79c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Shelter_Hervas/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Shelter_Hervas/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Areas/Admin/Controllers/AnimalController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Areas/Admin/Views/Animal/index.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Areas/Admin/Views/_ViewImports.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Areas/Admin/Views/_ViewStart.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Areas/Manager/Controllers/NewFile1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Areas/Manager/Views/_ViewImports.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Areas/Manager/Views/_ViewStart.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Areas/Security/Controllers/NewFile1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Areas/Security/Views/_ViewImports.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Areas/Security/Views/_ViewStart.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Areas/User/Controllers/NewFile1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Areas/User/Views/_ViewImports.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Areas/User/Views/_ViewStart.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/HomeController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/ErrorViewModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/Debug/net10.0/Shelter_Hervas.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/Debug/net10.0/Shelter_Hervas.Application.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/Debug/net10.0/Shelter_Hervas.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/Debug/net10.0/Shelter_Hervas.Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/Debug/net10.0/Shelter_Hervas.Application.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Application/obj/Debug/net10.0/Shelter_Hervas.Application.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/Debug/net10.0/Shelter_Hervas.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/Debug/net10.0/Shelter_Hervas.Domain.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/Debug/net10.0/Shelter_Hervas.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/Debug/net10.0/Shelter_Hervas.Domain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/ShelterDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/Database/ShelterDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/Debug/net10.0/Shelter_Hervas.Domain.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Domain/obj/Debug/net10.0/Shelter_Hervas.Domain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Web.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Validations/Adapters/NewFile1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Home/Privacy.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Shared/Error.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/_ViewImports.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/_ViewStart.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.GlobalUsings.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.RazorAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.RazorAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net10.0/Shelter_Hervas.Web.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/css/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/img/kocka/01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/js/site.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery/dist/jquery.slim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery/dist/jquery.slim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/lib/jquery/dist/jquery.slim.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Infrastructure/obj/Debug/net10.0/Shelter_Hervas.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Web/Shelter_Hervas.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Web/Shelter_Hervas.Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shelter_Hervas.Web/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Shelter_Hervas.Web/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,12 +28,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3LEF9pq5Nr9GPEUT1qVBejTvZGT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -149,7 +47,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "presun",
+    "git-widget-placeholder": "main",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -195,6 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1793011176561</updated>
       <workItem from="1793011179971" duration="2348000" />
+      <workItem from="1793028452388" duration="342000" />
     </task>
     <servers />
   </component>

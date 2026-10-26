@@ -190,8 +190,6 @@ C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\
 C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\compressed\ysna4jyxy8-{0}-9vr69e8ynj-9vr69e8ynj.gz
 C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\compressed\w70qq54bws-{0}-87fc7y1x7t-87fc7y1x7t.gz
 C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\compressed\vtaq7wxwbv-{0}-mlv21k5csn-mlv21k5csn.gz
-C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\compressed\stjhofkm5o-{0}-d5515j6ec1-d5515j6ec1.gz
-C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\compressed\dubb5h2sqa-{0}-d5515j6ec1-d5515j6ec1.gz
 C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\staticwebassets.build.json
 C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\staticwebassets.development.json
@@ -203,3 +201,8 @@ C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\
 C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\Shelter_Hervas.Web.pdb
 C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\Shelter_Hervas.Web.genruntimeconfig.cache
 C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\ref\Shelter_Hervas.Web.dll
+C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\compressed\dxm3z4fw4a-{0}-9o1ijc5bve-9o1ijc5bve.gz
+C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\compressed\cz7jj713z8-{0}-jvuu6ial2u-jvuu6ial2u.gz
+C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\scopedcss\Views\Profile\Index.cshtml.rz.scp.css
+C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\compressed\stjhofkm5o-{0}-j7n20m5qkx-j7n20m5qkx.gz
+C:\Users\bagri\Documents\GitHub\Utulek_PW\Shelter_Hervas\Shelter_Hervas.Web\obj\Debug\net10.0\compressed\dubb5h2sqa-{0}-j7n20m5qkx-j7n20m5qkx.gz
